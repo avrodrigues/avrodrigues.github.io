@@ -1,0 +1,40 @@
+---
+title: "Uma breve história da minha trajetória acadêmica"
+description: Sobre as ingnorâncias que me movem na pesquisa acadêmica
+
+author:
+  - name: Arthur V. Rodrigues
+date: 12-27-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: false
+---
+
+*This article is available only in Portuguese*
+
+Em um momento da vida tive a oportunidade de decidir que caminho profissional eu gostaria de trilhar. Eu não era um grande aficionado por ciência, mas achava fascinante o mundo da pesquisa científica; a ideia de que podemos descobrir algo ainda não sabido. Logo percebi que me interessava pelo mundo natural e que o tipo de pesquisa que me interessava tinha a ver com biologia. 
+
+Ingressei no curso de Ciências Biológicas e, aos trancos e barrancos, iniciava minha trajetória no mundo acadêmico. Logo de início me deparei com algo que me soou um contrassenso. Eu, filho de um marceneiro, natural da Mata Atlântica, não conhecia absolutamente nada sobre plantas, eis que meu primeiro interesse se revela: "Preciso saber disso!".
+
+Aos poucos, esse interesse me levou a trabalhar no [Laboratório de Botânica (FURB)](https://sites.google.com/view/botanica-furb/p%C3%A1gina-inicial), onde tive a sorte de participar, ainda que cadastrando plantas no sistema do [Herbário](http://www.furb.br/herbario), de um grande projeto de inventário das florestas de Santa Catarina, o [Inventário Florístico Florestal de Santa Catarina (IFFSC)](https://www.iff.sc.gov.br/. Lá pude ver de perto a magnitude da diversidade de plantas que a Mata Atlântica possui. No período de um ano, em que trabalhei cadastrando plantas no sistema, o herbário saltou de 15 mil para 30 mil plantas na coleção, um volume absurdo, proveniente basicamente da Floresta Ombrófila Densa. 
+
+```{r, layout="l-page", fig.cap="Paisagem de Mata Atantica. Camboriu - SC"}
+
+knitr::include_graphics("img1.jpg")
+
+```
+
+A Mata Atlântica saltava aos meus olhos, fosse no meu trabalho dentro do herbário, fosse nas frequentes viagens que fazia de ônibus entre Blumenau e o litoral de Santa Catarina para visitar minha família. Durante essas viagens, que duravam cerca de duas horas, ao observar a paisagem com morros cobertos de floresta, cidades na beira do rio e as planícies produzindo arroz, novas ignorâncias iam sendo descobertas: "- O que faz com que tenhamos essa floresta tão exuberante? Como é que pode comportar tanta diversidade?". Foi assim que a ecologia me capturou. 
+
+Logo descobri que essa não era apenas uma ignorância minha, mas a ciência também não tinha uma resposta clara e objetiva para ela. Descobri que a pergunta que me motivava a partir daquele momento também já havia intrigado os mais brilhantes naturalistas, e continua sendo uma pergunta central de um vasto campo de pesquisa e saber científico. Algo que tem impulsionado estudos em ciências naturais desde o século XIX. 
+
+Eis que termino minha graduação e entro no mestrado, focado em aplicar uma abordagem funcional no estudo das comunidades florestais da minha região. De volta ao Laboratório de Botânica, e com apoio fundamental do IFFSC, coletei atributos funcionais para um grande conjunto de espécies, abrangendo funções foliares, de caule, de uso de água e de sementes. Isso gerou minha primeira publicação, que apresenta o banco de dados, e foi acompanhada, na dissertação, de uma avaliação das estratégias de vida dessas plantas e ainda uma avaliação da relação de clima e diversidade, e da diversidade com a biomassa das comunidades. Esses últimos trabalhos ainda não foram publicados em revistas científicas.
+
+No mestrado, meu foco estava na escala local e regional, eu estava preocupado em como o clima e intervenção humana, dada pela fragmentação Mata Atlântica, moldava os atributos das comunidades, e como isso poderia influenciar em serviços ecossistêmicos que essas florestas proveem. No doutorado dei um passo a mais, busquei atacar outra fronteira no meu conhecimento: "como essas relações que eu observo hoje estão relacionadas com o que aconteceu no passado?".
+
+Hoje, durante meu doutorado, investigo como a história evolutiva de um bioma pode explicar o padrão de diversidade que observamos atualmente. Estou trabalhando com um grupo bem representativo na diversidade de árvores da Mata Atlântica, a família Myrtaceae. Assim, tenho utilizado ferramentas da biogeografia e macroevolução para avançar mais um pouco no entendimento da diversidade desse bioma. A cada passo desses, me sinto sendo impulsionado a avançar sobre as fronteiras que surgem, cativado pelas novas ignorâncias que descubro em mim.
+
+
+
+

@@ -1,0 +1,27 @@
+---
+title: "TidyTuesday"
+description: Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+---
+
+
+## 2020
+### Week 52 - The Big Mac Index
+Code: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52
+
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week52/bigmac_index.gif)
+
+### Week 50 - BBC's 100 women of 2020
+Code: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week50/latin_women.png)
+
+### Week 48 - Washington Hike
+Code: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week48/Chart_v2.png)
+
+
+
+
+

@@ -1,0 +1,25 @@
+---
+title: "Arthur V. Rodrigues"
+site: distill::distill_website
+description: 'Community Ecology, Macroecology and Macroevolution'
+---
+```{r, layout="l-screen-inset", fig.cap="Atlantic Forest landscape in southern Brazil"}
+
+knitr::include_graphics("img/img2.jpg")
+
+```
+
+I am biologist, with deep interest in forest ecosystems, in particular the Atlantic Forest. I have worked with functional ecology of forests plants, macroecology, macroevolution and biogeography.
+
+Currently, I develop my doctorate thesis at [Phylogenetic and Functional Ecology Lab](https://www.ufrgs.br/leff/) in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive the patterns of diversity in Atlantic Forest. 
+
+I love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tyding ecological data. 
+
+Do we have common interests? 
+Do you think I can contribute with you in anyway? 
+Contact me at rodrigues.arthur.v@gmail.com
+
+A code  example:
+`plot(x, y)`
+
+---

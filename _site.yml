@@ -1,0 +1,28 @@
+name: "avr_site"
+title: "Arthur V. Rodrigues"
+theme: theme.css
+description: |
+  Arthur V. Rodrigues
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Blog"
+      href: blog.html
+    - text: "DataViz"
+      menu:
+         - text: "TidyTuesday"
+           href: tidy_tuesday.html
+         - text: "Shiny apps"
+           href: shiny.html
+    - text: "Publications"
+      href: pub.html
+    - icon: fab fa-twitter
+      href: https://twitter.com/avrodrigues_
+    - icon: fab fa-youtube
+      href: https://www.youtube.com/channel/UCRT_JrPWI29gL19YEAt2Kbw
+    - icon: fab fa-github
+      href: https://github.com/avrodrigues/
+      
+output: distill::distill_article

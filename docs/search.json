@@ -5,7 +5,7 @@
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-27T15:52:07-03:00"
+      "last_modified": "2020-12-27T15:59:00-03:00"
     },
     {
       "path": "index.html",
@@ -19,8 +19,8 @@
       "path": "pub.html",
       "title": "Publications",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-27T15:52:18-03:00"
+      "contents": "\r\nSoon a list of scientific articles I collaborate.\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-27T16:40:49-03:00"
     },
     {
       "path": "shiny.html",

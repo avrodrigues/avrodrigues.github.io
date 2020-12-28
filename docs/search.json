@@ -5,7 +5,7 @@
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-28T10:04:26-03:00"
+      "last_modified": "2020-12-28T10:27:56-03:00"
     },
     {
       "path": "index.html",
@@ -27,16 +27,16 @@
       "title": "Shiny apps",
       "description": "Some shiny apps I have developed",
       "author": [],
-      "contents": "\r\n\r\nContents\r\n\r\n\r\nnaturaList\r\n\r\nThis app was made for the 2019 GBIF Ebbe Nielsen Challenge and win the 3rd Prize in this challenge.\r\nnaturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.\r\nBased on this work, an R package is in development to provide more flexibility on the classification and cleaning of datasets in R.\r\nPlant Traits Dataset\r\n\r\nThis is, for shure, the challenger and the hardest app I have made. Unfortunately, it is unfinished and only in Portuguese.\r\nIn this app, my objective was to share the images of wood branches and stomata I shoted for my master thesis project.\r\nMy master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.\r\nIn the app you can view images of the bracnhes, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, which enables to see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.\r\nYou can access the paper and the dataset, which include the images showed in the app, in this link.\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-28T10:22:12-03:00"
+      "contents": "\r\nnaturaList\r\n\r\nThis app was made for the 2019 GBIF Ebbe Nielsen Challenge and win the 3rd Prize in this challenge.\r\nnaturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.\r\nBased on this work, an R package is in development to provide more flexibility on the classification and cleaning of datasets in R.\r\nPlant Traits Dataset\r\n\r\nThis is, for shure, the challenger and the hardest app I have made. Unfortunately, it is unfinished and only in Portuguese.\r\nIn this app, my objective was to share the images of wood branches and stomata I shoted for my master thesis project.\r\nMy master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.\r\nIn the app you can view images of the bracnhes, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, which enables to see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.\r\nYou can access the paper and the dataset, which include the images showed in the app, in this link.\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-28T15:18:30-03:00"
     },
     {
       "path": "tidy_tuesday.html",
       "title": "TidyTuesday",
       "description": "Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)",
       "author": [],
-      "contents": "\r\n\r\nContents\r\n\r\n\r\n2020\r\nWeek 52 - The Big Mac Index\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52\r\n\r\nWeek 50 - BBC’s 100 women of 2020\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50\r\n\r\nWeek 48 - Washington Hike\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-28T10:23:00-03:00"
+      "contents": "\r\n2020\r\nWeek 52 - The Big Mac Index\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52\r\n\r\nWeek 50 - BBC’s 100 women of 2020\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50\r\n\r\nWeek 48 - Washington Hike\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-28T15:21:17-03:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -9,6 +9,7 @@ output:
   distill::distill_article:
     self_contained: false
 draft: false
+lang: "pt"
 ---
 
 *This article is available only in Portuguese*
@@ -19,7 +20,7 @@ Ingressei no curso de Ciências Biológicas e, aos trancos e barrancos, iniciava
 
 Aos poucos, esse interesse me levou a trabalhar no [Laboratório de Botânica (FURB)](https://sites.google.com/view/botanica-furb/p%C3%A1gina-inicial), onde tive a sorte de participar, ainda que cadastrando plantas no sistema do [Herbário](http://www.furb.br/herbario), de um grande projeto de inventário das florestas de Santa Catarina, o [Inventário Florístico Florestal de Santa Catarina (IFFSC)](https://www.iff.sc.gov.br/. Lá pude ver de perto a magnitude da diversidade de plantas que a Mata Atlântica possui. No período de um ano, em que trabalhei cadastrando plantas no sistema, o herbário saltou de 15 mil para 30 mil plantas na coleção, um volume absurdo, proveniente basicamente da Floresta Ombrófila Densa. 
 
-```{r, layout="l-page", fig.cap="Paisagem de Mata Atantica. Camboriu - SC"}
+```{r, layout="l-page", fig.cap="Paisagem de Mata Atlântica. Camboriu - SC"}
 
 knitr::include_graphics("img1.jpg")
 

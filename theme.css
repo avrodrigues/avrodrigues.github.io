@@ -16,7 +16,7 @@
 
 html {
   /*-- Main font sizes --*/
-  --title-size:      50px;
+  --title-size:      42px;
   --body-size:       1.06rem;
   --code-size:       14px;
   --aside-size:      12px;
@@ -33,6 +33,10 @@ html {
   --mono-font:       'Courier Prime', monospace;
   --body-font:       'Inter', sans-serif;
   --navbar-font:     'Inter', sans-serif;  /* websites + blogs only */
+}
+
+body {
+  background-color: #fafafa;
 }
 
 /*-- ARTICLE METADATA --*/
@@ -64,7 +68,7 @@ d-appendix {
   --title-size:       20px;
   --text-color:       white;
   --text-size:        15px;
-  --hover-color:      #c3c5ce;
+  --hover-color:      #4accd3;
   --bkgd-color:       #1f2d47;
 }
 

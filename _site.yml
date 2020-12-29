@@ -16,6 +16,7 @@ navbar:
           href: tidy_tuesday.html
         - text: "Shiny apps"
           href: shiny.html
+          
     - text: "Publications"
       href: pub.html
     - icon: fab fa-twitter
@@ -24,7 +25,6 @@ navbar:
       href: https://www.youtube.com/channel/UCRT_JrPWI29gL19YEAt2Kbw
     - icon: fab fa-github
       href: https://github.com/avrodrigues/
-lang: ["en", "pt-br"]
-     
+
       
 output: distill::distill_article

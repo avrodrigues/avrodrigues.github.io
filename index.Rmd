@@ -11,15 +11,14 @@ knitr::include_graphics("img/img2.jpg")
 
 I am biologist, with deep interest in forest ecosystems, in particular the Atlantic Forest. I have worked with functional ecology of forests plants, macroecology, macroevolution and biogeography.
 
-Currently, I develop my doctorate thesis at [Phylogenetic and Functional Ecology Lab](https://www.ufrgs.br/leff/) in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive the patterns of diversity in Atlantic Forest. 
+Currently, I develop my doctorate thesis at [Phylogenetic and Functional Ecology Lab](https://www.ufrgs.br/leff/) in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive patterns of diversity in Atlantic Forest. 
 
-I love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tyding ecological data. 
+I love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tiding ecological data. 
 
 Do we have common interests? 
 Do you think I can contribute with you in anyway? 
 Contact me at rodrigues.arthur.v@gmail.com
 
-A code  example:
-`plot(x, y)`
+
 
 ---

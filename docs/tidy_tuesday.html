@@ -108,7 +108,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["TidyTuesday"]},{"type":"character","attributes":{},"value":["Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["TidyTuesday"]},{"type":"character","attributes":{},"value":["Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc-depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2104,7 +2104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   }
   
   body {
-    background-color: #fafafa;
+    background-color: rgba(248, 247, 236, 0.4);
   }
   
   /*-- ARTICLE METADATA --*/
@@ -2136,7 +2136,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --title-size:       20px;
     --text-color:       white;
     --text-size:        15px;
-    --hover-color:      #4accd3;
+    --hover-color:      #d8cf92;
     --bkgd-color:       #1f2d47;
   }
   
@@ -2147,6 +2147,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --bkgd-color:       #0F2E3D;
   }
   
+  /* New options for navbar menu style */
+    
+    .nav-dropdown .nav-dropbtn {
+      border: none;
+      outline: none;
+      color: white; /*  rgba(255, 255, 255, 0.8) */
+      padding: 16px 10px;
+      background-color: transparent;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      margin: 0;
+      margin-top: 1px;
+      z-index: 2;
+    }
+    
+    .nav-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1f2d47;
+      min-width: 200px;
+      border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 4px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+      z-index: 1;
+      margin-top: 2px;
+      white-space: nowrap;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    
+    .nav-dropdown-active {
+      display: block;
+    }
+    
+    .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+      color: white;  /*-- black --*/
+      padding: 6px 24px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      background-color: #1f2d47;
+    }
+    
+    .nav-dropdown:hover .nav-dropbtn {
+      color: #d8cf92; /* white */
+    }
+    
+    .nav-dropdown-content a:hover {
+      background-color: #1f2d47;
+      color: #d8cf92; /* white */
+    }
+    
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
   </style>
@@ -2329,7 +2382,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="blog.html">Blog</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-DataViz
+Data Visualization
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
@@ -2365,15 +2418,30 @@ DataViz
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#section">2020</a><ul>
+<li><a href="#week-52">Week 52</a></li>
+<li><a href="#week-50">Week 50</a></li>
+<li><a href="#week-48">Week 48</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
 <h2 id="section">2020</h2>
-<h3 id="week-52---the-big-mac-index">Week 52 - The Big Mac Index</h3>
-<p>Code: <a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52" class="uri">https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52</a></p>
+<h3 id="week-52">Week 52</h3>
+<h4 id="the-big-mac-index">The Big Mac Index</h4>
+<p><a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52">Code</a></p>
 <p><img src="https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week52/bigmac_index.gif" /></p>
-<h3 id="week-50---bbcs-100-women-of-2020">Week 50 - BBC’s 100 women of 2020</h3>
-<p>Code: <a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50" class="uri">https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50</a></p>
+<h3 id="week-50">Week 50</h3>
+<h4 id="bbcs-100-women-of-2020">BBC’s 100 women of 2020</h4>
+<p><a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50">Code</a></p>
 <p><img src="https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week50/latin_women.png" /></p>
-<h3 id="week-48---washington-hike">Week 48 - Washington Hike</h3>
-<p>Code: <a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48" class="uri">https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48</a></p>
+<h3 id="week-48">Week 48</h3>
+<h4 id="washington-hike">Washington Hike</h4>
+<p><a href="https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48">Code</a></p>
 <p><img src="https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week48/Chart_v2.png" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

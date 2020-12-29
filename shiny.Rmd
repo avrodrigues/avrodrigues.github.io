@@ -1,6 +1,9 @@
 ---
 title: "Shiny apps"
 description: Some shiny apps I have developed
+output:
+  distill::distill_article:
+    toc: true
 ---
 
 ## [naturaList](https://avrodrigues.shinyapps.io/naturaList/)

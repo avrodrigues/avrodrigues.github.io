@@ -1,6 +1,6 @@
 name: "avr_site"
 title: "Arthur V. Rodrigues"
-theme: theme.css
+theme: my_theme.css
 description: |
   Arthur V. Rodrigues
 output_dir: "docs"
@@ -10,7 +10,7 @@ navbar:
       href: index.html
     - text: "Blog"
       href: blog.html
-    - text: "DataViz"
+    - text: "Data Visualization"
       menu:
         - text: "TidyTuesday"
           href: tidy_tuesday.html

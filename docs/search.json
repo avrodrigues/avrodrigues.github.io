@@ -5,38 +5,38 @@
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-29T12:21:29-03:00"
+      "last_modified": "2020-12-29T16:24:40-03:00"
     },
     {
       "path": "index.html",
       "title": "Arthur V. Rodrigues",
       "description": "Community Ecology, Macroecology and Macroevolution",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\nFigure 1: Atlantic Forest landscape in southern Brazil\r\n\r\n\r\n\r\nI am biologist, with deep interest in forest ecosystems, in particular the Atlantic Forest. I have worked with functional ecology of forests plants, macroecology, macroevolution and biogeography.\r\nCurrently, I develop my doctorate thesis at Phylogenetic and Functional Ecology Lab in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive the patterns of diversity in Atlantic Forest.\r\nI love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tyding ecological data.\r\nDo we have common interests? Do you think I can contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com\r\nA code example: plot(x, y)\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-29T12:21:53-03:00"
+      "contents": "\r\n\r\n\r\n\r\nFigure 1: Atlantic Forest landscape in southern Brazil\r\n\r\n\r\n\r\nI am biologist, with deep interest in forest ecosystems, in particular the Atlantic Forest. I have worked with functional ecology of forests plants, macroecology, macroevolution and biogeography.\r\nCurrently, I develop my doctorate thesis at Phylogenetic and Functional Ecology Lab in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive patterns of diversity in Atlantic Forest.\r\nI love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tiding ecological data.\r\nDo we have common interests? Do you think I can contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-29T16:24:59-03:00"
     },
     {
       "path": "pub.html",
       "title": "Publications",
       "author": [],
-      "contents": "\r\nSoon a list of scientific articles I collaborate.\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-29T12:22:00-03:00"
+      "contents": "\r\nIn construction\r\nLattes | Google Scholar | ORCID\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-29T16:28:36-03:00"
     },
     {
       "path": "shiny.html",
       "title": "Shiny apps",
       "description": "Some shiny apps I have developed",
       "author": [],
-      "contents": "\r\nnaturaList\r\n\r\nThis app was made for the 2019 GBIF Ebbe Nielsen Challenge and win the 3rd Prize in this challenge.\r\nnaturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.\r\nBased on this work, an R package is in development to provide more flexibility on the classification and cleaning of datasets in R.\r\nPlant Traits Dataset\r\n\r\nThis is, for shure, the challenger and the hardest app I have made. Unfortunately, it is unfinished and only in Portuguese.\r\nIn this app, my objective was to share the images of wood branches and stomata I shoted for my master thesis project.\r\nMy master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.\r\nIn the app you can view images of the bracnhes, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, which enables to see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.\r\nYou can access the paper and the dataset, which include the images showed in the app, in this link.\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-29T12:22:11-03:00"
+      "contents": "\r\n\r\nContents\r\nnaturaList\r\nPlant Traits Dataset\r\n\r\nnaturaList\r\n\r\nThis app was made for the 2019 GBIF Ebbe Nielsen Challenge and win the 3rd Prize in this challenge.\r\nnaturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.\r\nBased on this work, an R package is in development to provide more flexibility on the classification and cleaning of datasets in R.\r\nPlant Traits Dataset\r\n\r\nThis is, for shure, the challenger and the hardest app I have made. Unfortunately, it is unfinished and only in Portuguese.\r\nIn this app, my objective was to share the images of wood branches and stomata I shoted for my master thesis project.\r\nMy master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.\r\nIn the app you can view images of the bracnhes, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, which enables to see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.\r\nYou can access the paper and the dataset, which include the images showed in the app, in this link.\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-29T16:25:22-03:00"
     },
     {
       "path": "tidy_tuesday.html",
       "title": "TidyTuesday",
       "description": "Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)",
       "author": [],
-      "contents": "\r\n2020\r\nWeek 52 - The Big Mac Index\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52\r\n\r\nWeek 50 - BBC’s 100 women of 2020\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50\r\n\r\nWeek 48 - Washington Hike\r\nCode: https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2020-12-29T12:22:31-03:00"
+      "contents": "\r\n\r\nContents\r\n2020Week 52\r\nWeek 50\r\nWeek 48\r\n\r\n\r\n2020\r\nWeek 52\r\nThe Big Mac Index\r\nCode\r\n\r\nWeek 50\r\nBBC’s 100 women of 2020\r\nCode\r\n\r\nWeek 48\r\nWashington Hike\r\nCode\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2020-12-29T16:38:46-03:00"
     }
   ],
   "collections": ["posts/posts.json"]

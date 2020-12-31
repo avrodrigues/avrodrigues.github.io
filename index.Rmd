@@ -9,16 +9,39 @@ knitr::include_graphics("img/img2.jpg")
 
 ```
 
-I am biologist, with deep interest in forest ecosystems, in particular the Atlantic Forest. I have worked with functional ecology of forests plants, macroecology, macroevolution and biogeography.
-
-Currently, I develop my doctorate thesis at [Phylogenetic and Functional Ecology Lab](https://www.ufrgs.br/leff/) in the Universidade Federal do Rio Grande do Sul (UFRGS), Brazil. In this project I am interested in how processes of diversification, dispersion, and niche evolution drive patterns of diversity in Atlantic Forest. 
-
-I love to code in R and build tools with Shiny. I have experience in using multivariate statistics, phylogenetic analysis, species distribution modeling, gathering, and tiding ecological data. 
-
-Do we have common interests? 
-Do you think I can contribute with you in anyway? 
-Contact me at rodrigues.arthur.v@gmail.com
-
-
-
+Olá 
 ---
+<aside>
+```{r}
+library(ggimage)
+library(ggplot2)
+
+df.img <- data.frame(x = 1, y = 1, img = "img/ID.JPG")
+
+ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 1.6) +
+  theme_void() +
+  theme(panel.background = element_rect(fill = "#F8F7EC66", color = "#F8F7EC66"))
+```
+</aside>
+
+<p style=" font-size:10pt"> *English below* </p> 
+eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica. 
+
+Aqui compartilho [textos](avrodrigues.github.io/avr_site/blog.html), [minhas pesquisas](avrodrigues.github.io/avr_site/pub.html) e algumas ideias em [visualização de dados](avrodrigues.github.io/avr_site/tidy_tuesday.html).
+
+Eu adoro programar em R, sou um entusiasta dos [aplicativos shiny](avrodrigues.github.io/avr_site/shiny.html) e recentemente comecei a estudar visualização de dados. 
+
+Temos interesses em comum? Acha que eu posso te ajudar de alguma forma? Entre em contato comigo: rodrigues.arthur.v@gmail.com
+
+
+Hello
+---
+I am Arthur. I’m PhD [student in Ecology](https://www.ufrgs.br/leff/). I have developed research in community ecology, macroecology and macroevolution. My main interest is plant ecology, and my research has focused on the Atlantic Forest region. 
+
+Here I share [texts](avrodrigues.github.io/avr_site/blog.html), [my research](avrodrigues.github.io/avr_site/pub.html), and some ideas in [data visualization](avrodrigues.github.io/avr_site/tidy_tuesday.html).
+
+I love to code in R, I am an enthusiast of [shiny apps](avrodrigues.github.io/avr_site/shiny.html) and recently I started to study data visualization.
+
+Do we have common interests? Do you think I can contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com
+
+

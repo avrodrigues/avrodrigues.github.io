@@ -25,7 +25,7 @@ ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 
 </aside>
 
 <p style=" font-size:10pt"> *English below* </p> 
-eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica. 
+Eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica. 
 
 Aqui compartilho [textos](https://avrodrigues.github.io/avr_site/blog.html), [minhas pesquisas](https://avrodrigues.github.io/avr_site/pub.html) e algumas ideias em [visualização de dados](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
@@ -40,8 +40,8 @@ I am Arthur. I’m PhD [student in Ecology](https://www.ufrgs.br/leff/). I have 
 
 Here I share [texts](https://avrodrigues.github.io/avr_site/blog.html), [my research](https://avrodrigues.github.io/avr_site/pub.html), and some ideas in [data visualization](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
-I love to code in R, I am an enthusiast of [shiny apps](avrodrigues.github.io/avr_site/shiny.html) and recently I started to study data visualization.
+I love to code in R, I am an enthusiast of [shiny apps](https://avrodrigues.github.io/avr_site/shiny.html) and recently I started to study data visualization.
 
-Do we have common interests? Do you think I can contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com
+Do we have interests in common? Can I contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com
 
 

@@ -27,9 +27,9 @@ ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 
 <p style=" font-size:10pt"> *English below* </p> 
 eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica. 
 
-Aqui compartilho [textos](avrodrigues.github.io/avr_site/blog.html), [minhas pesquisas](avrodrigues.github.io/avr_site/pub.html) e algumas ideias em [visualização de dados](avrodrigues.github.io/avr_site/tidy_tuesday.html).
+Aqui compartilho [textos](https://avrodrigues.github.io/avr_site/blog.html), [minhas pesquisas](https://avrodrigues.github.io/avr_site/pub.html) e algumas ideias em [visualização de dados](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
-Eu adoro programar em R, sou um entusiasta dos [aplicativos shiny](avrodrigues.github.io/avr_site/shiny.html) e recentemente comecei a estudar visualização de dados. 
+Eu adoro programar em R, sou um entusiasta dos [aplicativos shiny](https://avrodrigues.github.io/avr_site/shiny.html) e recentemente comecei a estudar visualização de dados. 
 
 Temos interesses em comum? Acha que eu posso te ajudar de alguma forma? Entre em contato comigo: rodrigues.arthur.v@gmail.com
 
@@ -38,7 +38,7 @@ Hello
 ---
 I am Arthur. I’m PhD [student in Ecology](https://www.ufrgs.br/leff/). I have developed research in community ecology, macroecology and macroevolution. My main interest is plant ecology, and my research has focused on the Atlantic Forest region. 
 
-Here I share [texts](avrodrigues.github.io/avr_site/blog.html), [my research](avrodrigues.github.io/avr_site/pub.html), and some ideas in [data visualization](avrodrigues.github.io/avr_site/tidy_tuesday.html).
+Here I share [texts](https://avrodrigues.github.io/avr_site/blog.html), [my research](https://avrodrigues.github.io/avr_site/pub.html), and some ideas in [data visualization](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
 I love to code in R, I am an enthusiast of [shiny apps](avrodrigues.github.io/avr_site/shiny.html) and recently I started to study data visualization.
 

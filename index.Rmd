@@ -3,16 +3,18 @@ title: "Arthur V. Rodrigues"
 site: distill::distill_website
 description: 'Community Ecology, Macroecology and Macroevolution'
 ---
-```{r, layout="l-screen-inset", fig.cap="Atlantic Forest landscape in southern Brazil"}
+
+```{r, layout="l-screen-inset", fig.cap="Atlantic Forest landscape in southern Brazil", echo=FALSE}
 
 knitr::include_graphics("img/img2.jpg")
 
 ```
 
-Olá 
----
+## Olá
+
 <aside>
-```{r}
+
+```{r, echo=FALSE}
 library(ggimage)
 library(ggplot2)
 
@@ -22,26 +24,29 @@ ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 
   theme_void() +
   theme(panel.background = element_rect(fill = "#F8F7EC66", color = "#F8F7EC66"))
 ```
+
 </aside>
 
-<p style=" font-size:10pt"> *English below* </p> 
-Eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica. 
+<p style=" font-size:10pt">
+
+*English below*
+
+</p>
+
+Eu sou Arthur. Sou [doutorando em Ecologia](https://www.ufrgs.br/leff/). Eu tenho desenvolvido pesquisa em ecologia de comunidades, macroecologia e macroevolução. Meu interesse principal é ecologia vegetal e minhas pesquisas têm focado na região da Mata Atlântica.
 
 Aqui compartilho [textos](https://avrodrigues.github.io/avr_site/blog.html), [minhas pesquisas](https://avrodrigues.github.io/avr_site/pub.html) e algumas ideias em [visualização de dados](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
-Eu adoro programar em R, sou um entusiasta dos [aplicativos shiny](https://avrodrigues.github.io/avr_site/shiny.html) e recentemente comecei a estudar visualização de dados. 
+Eu adoro programar em R, sou um entusiasta dos [aplicativos shiny](https://avrodrigues.github.io/avr_site/shiny.html) e recentemente comecei a estudar visualização de dados.
 
-Temos interesses em comum? Acha que eu posso te ajudar de alguma forma? Entre em contato comigo: rodrigues.arthur.v@gmail.com
+Temos interesses em comum? Acha que eu posso te ajudar de alguma forma? Entre em contato comigo: [rodrigues.arthur.v\@gmail.com](mailto:rodrigues.arthur.v@gmail.com){.email}
 
+## Hello
 
-Hello
----
-I am Arthur. I’m PhD [student in Ecology](https://www.ufrgs.br/leff/). I have developed research in community ecology, macroecology and macroevolution. My main interest is plant ecology, and my research has focused on the Atlantic Forest region. 
+I am Arthur. I'm PhD [student in Ecology](https://www.ufrgs.br/leff/). I have developed research in community ecology, macroecology and macroevolution. My main interest is plant ecology, and my research has focused on the Atlantic Forest region.
 
 Here I share [texts](https://avrodrigues.github.io/avr_site/blog.html), [my research](https://avrodrigues.github.io/avr_site/pub.html), and some ideas in [data visualization](https://avrodrigues.github.io/avr_site/tidy_tuesday.html).
 
 I love to code in R, I am an enthusiast of [shiny apps](https://avrodrigues.github.io/avr_site/shiny.html) and recently I started to study data visualization.
 
-Do we have interests in common? Can I contribute with you in anyway? Contact me at rodrigues.arthur.v@gmail.com
-
-
+Do we have interests in common? Can I contribute with you in anyway? Contact me at [rodrigues.arthur.v\@gmail.com](mailto:rodrigues.arthur.v@gmail.com){.email}

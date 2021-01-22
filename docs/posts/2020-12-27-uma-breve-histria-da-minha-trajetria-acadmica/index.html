@@ -90,6 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <meta property="description" itemprop="description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
 
+<link rel="canonical" href="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2020-12-27"/>
@@ -100,19 +101,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
+<meta property="og:url" content="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
+<meta property="og:image" content="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/img1.jpg"/>
 <meta property="og:locale" content="pt"/>
 <meta property="og:site_name" content="Arthur V. Rodrigues"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
 <meta property="twitter:description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
+<meta property="twitter:url" content="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
+<meta property="twitter:image" content="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/img1.jpg"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
+<meta name="citation_fulltext_html_url" content="https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
+<meta name="citation_online_date" content="2020/12/27"/>
+<meta name="citation_publication_date" content="2020/12/27"/>
+<meta name="citation_author" content="Arthur V. Rodrigues"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft","lang"]}},"value":[{"type":"character","attributes":{},"value":["Uma breve história da minha trajetória acadêmica"]},{"type":"character","attributes":{},"value":["Sobre as ingnorâncias que me movem na pesquisa acadêmica"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Arthur V. Rodrigues"]}]}]},{"type":"character","attributes":{},"value":["12-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["pt"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft","lang","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Uma breve história da minha trajetória acadêmica"]},{"type":"character","attributes":{},"value":["Sobre as ingnorâncias que me movem na pesquisa acadêmica"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Arthur V. Rodrigues"]}]}]},{"type":"character","attributes":{},"value":["12-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["pt"]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -455,8 +466,15 @@ d-title {
   top: 0;
 }
 
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
 </style>
 
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -564,19 +582,21 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           var results = fuse.search(query, searchOptions);
           callback(results
             .map(function(result) { return result.item; })
-            .filter(function(item) { return !!item.description; })
           );
         },
         templates: {
           suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
             var html = `
               <div class="search-item">
                 <h3>${suggestion.title}</h3>
                 <div class="search-item-description">
-                  ${suggestion.description}
+                  ${suggestion.description || ''}
                 </div>
                 <div class="search-item-preview">
-                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                  ${img}
                 </div>
               </div>
             `;
@@ -599,6 +619,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 
 <style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
 
 /* Algolioa Autocomplete */
 
@@ -674,6 +698,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
   margin-block-start: 0;
   margin-block-end: 5px;
 }
@@ -901,6 +926,11 @@ d-article pre a:hover {
   text-decoration: underline;
 }
 
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
+}
+
 @media(min-width: 768px) {
 
 d-article pre,
@@ -1055,6 +1085,17 @@ d-article .citation {
 
 div.hanging-indent{
   margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
 }
 
 
@@ -1722,7 +1763,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('div.sourceCode, pre, script');
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1837,6 +1878,20 @@ function init_distill() {
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
 
     // clear polling timer
     clearInterval(tid);
@@ -2236,7 +2291,7 @@ h1, h2, h3, h4, h5, h6,
 
 d-article div.sourceCode code,
 d-article pre code {
-	font-family: var(--mono-font), var(--mono-default);
+  font-family: var(--mono-font), var(--mono-default);
 }
 
 
@@ -2261,76 +2316,78 @@ d-article h6 {
 }
 
 /*-- BODY --*/
-/* only text inside of <p> tags */
-d-article > p {
+d-article > p,  /* only text inside of <p> tags */
+d-article > ul, /* lists */
+d-article > ol {
   color: var(--body-color, rgba(0, 0, 0, 0.8));
   font-size: var(--body-size, 1.06rem);
 }
 
+
 /*-- CODE --*/
 d-article div.sourceCode code,
 d-article pre code {
-	font-size: var(--code-size, 14px);
+  font-size: var(--code-size, 14px);
 }
 
 /*-- ASIDE --*/
 d-article aside {
-	font-size: var(--aside-size, 12px);
-	color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  font-size: var(--aside-size, 12px);
+  color: var(--aside-color, rgba(0, 0, 0, 0.6));
 }
 
 /*-- FIGURE CAPTIONS --*/
 figure .caption,
 figure figcaption,
 .figure .caption {
-	font-size: var(--fig-cap-size, 13px);
-	color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  font-size: var(--fig-cap-size, 13px);
+  color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
 }
 
 /*-- METADATA --*/
 d-byline h3 {
-	font-size: var(--heading-size, 0.6rem);
-	color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  font-size: var(--heading-size, 0.6rem);
+  color: var(--heading-color, rgba(0, 0, 0, 0.5));
 }
 
 d-byline {
-	font-size: var(--body-size, 0.8rem);
-	color: var(--body-color, rgba(0, 0, 0, 0.8));
+  font-size: var(--body-size, 0.8rem);
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
 }
 
 d-byline a,
 d-article d-byline a {
-	color: var(--body-color, rgba(0, 0, 0, 0.8));
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
 }
 
 /*-- TABLE OF CONTENTS --*/
 .d-contents nav h3 {
-	font-size: var(--heading-size, 18px);
+  font-size: var(--heading-size, 18px);
 }
 
 .d-contents nav a {
-	font-size: var(--contents-size, 13px);
+  font-size: var(--contents-size, 13px);
 }
 
 /*-- APPENDIX --*/
 d-appendix h3 {
   font-size: var(--heading-size, 15px);
-	color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  color: var(--heading-color, rgba(0, 0, 0, 0.65));
 }
 
 d-appendix {
   font-size: var(--text-size, 0.8em);
-	color: var(--text-color, rgba(0, 0, 0, 0.5));
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
 }
 
 d-appendix d-footnote-list a.footnote-backlink {
-	color: var(--text-color, rgba(0, 0, 0, 0.5));
+  color: var(--text-color, rgba(0, 0, 0, 0.5));
 }
 
 /*-- WEBSITE HEADER + FOOTER --*/
 .distill-site-header .title {
-	font-size: var(--title-size, 18px);
-	font-family: var(--navbar-font), var(--heading-default);
+  font-size: var(--title-size, 18px);
+  font-family: var(--navbar-font), var(--heading-default);
 }
 
 .distill-site-header a,
@@ -2338,24 +2395,30 @@ d-appendix d-footnote-list a.footnote-backlink {
   font-family: var(--navbar-font), var(--heading-default);
 }
 
-.distill-site-header a:hover {
-	color: var(--hover-color, white);
+.nav-dropdown .nav-dropbtn {
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  font-size: var(--text-size, 15px);
+}
+
+.distill-site-header a:hover,
+.nav-dropdown:hover .nav-dropbtn {
+  color: var(--hover-color, white);
 }
 
 .distill-site-header {
-	font-size: var(--text-size, 15px);
-	color: var(--text-color, rgba(255, 255, 255, 0.8));
-	background-color: var(--bkgd-color, #0F2E3D);
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
 }
 
 .distill-site-footer {
-	font-size: var(--text-size, 15px);
-	color: var(--text-color, rgba(255, 255, 255, 0.8));
-	background-color: var(--bkgd-color, #0F2E3D);
+  font-size: var(--text-size, 15px);
+  color: var(--text-color, rgba(255, 255, 255, 0.8));
+  background-color: var(--bkgd-color, #0F2E3D);
 }
 
 .distill-site-footer a:hover {
-	color: var(--hover-color, white);
+  color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -2450,6 +2513,44 @@ Data Visualization
 <p>Hoje, durante meu doutorado, investigo como a história evolutiva de um bioma pode explicar o padrão de diversidade que observamos atualmente. Estou trabalhando com um grupo bem representativo na diversidade de árvores da Mata Atlântica, a família Myrtaceae. Assim, tenho utilizado ferramentas da biogeografia e macroevolução para avançar mais um pouco no entendimento da diversidade desse bioma. A cada passo desses, me sinto sendo impulsionado a avançar sobre as fronteiras que surgem, cativado pelas novas ignorâncias que descubro em mim.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="disqus-comments">
+      <i class="fas fa-comments"></i>
+      &nbsp;
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/">Comment on this article</span>
+    </span>
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica&amp;url=https%3A%2F%2Favrodrigues.github.io%2Favr_site%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Favrodrigues.github.io%2Favr_site%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F&amp;title=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://pinterest.com/pin/create/link/?url=https%3A%2F%2Favrodrigues.github.io%2Favr_site%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F&amp;description=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Favrodrigues.github.io%2Favr_site%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </span>
+  </p>
+  <script id="dsq-count-scr" src="https://avrodrigues.disqus.com/count.js" async></script>
+  <div id="disqus_thread" class="hidden"></div>
+  <script type="text/javascript" cookie-consent="functionality">
+var disqus_config = function () {
+  this.page.url = 'https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/';
+  this.page.identifier = 'posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/';
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://avrodrigues.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+</div>
 <!--/radix_placeholder_article_footer-->
 </div>
 
@@ -2460,7 +2561,18 @@ Data Visualization
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Rodrigues (2020, Dec. 27). Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica. Retrieved from https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{rodrigues2020uma,
+  author = {Rodrigues, Arthur V.},
+  title = {Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica},
+  url = {https://avrodrigues.github.io/avr_site/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/},
+  year = {2020}
+}</pre>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

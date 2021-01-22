@@ -1,12 +1,17 @@
 ---
 title: "TidyTuesday"
-description: Here you find some selected data visualization I have made for [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+description: Here you find some selected data visualization I have made for [#TidyTuesday](https://github.com/rfordatascience/tidytuesday). All submissions can be found in my [github](https://github.com/avrodrigues/Tidy_tuesday/) repository.
 output:
   distill::distill_article:
     toc: true
     toc-depth: 3
 ---
+## 2021
+### Week 04
+#### Kenya census 
+[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week04)
 
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week04/kenya_crops.png)
 
 ## 2020
 ### Week 52

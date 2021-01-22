@@ -3,7 +3,16 @@ title: "Arthur V. Rodrigues"
 theme: my_theme.css
 description: |
   Arthur V. Rodrigues
+base_url: https://avrodrigues.github.io/avr_site
 output_dir: "docs"
+
+collections:
+  posts:
+    disqus:
+      shortname: avrodrigues
+      hidden: false
+    share: [twitter, linkedin, pinterest, facebook]  
+
 navbar:
   right:
     - text: "Home"

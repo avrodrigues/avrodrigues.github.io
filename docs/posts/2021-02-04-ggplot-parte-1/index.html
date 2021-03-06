@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 
 <head>
   <meta charset="utf-8"/>
@@ -20,19 +20,18 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -52,7 +51,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
@@ -86,49 +85,53 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica</title>
+<title>Arthur V. Rodrigues: ggplot - parte 1</title>
 
-<meta property="description" itemprop="description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
+<meta property="description" itemprop="description" content="A short description of the post."/>
 
-<link rel="canonical" href="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
+<link rel="canonical" href="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2020-12-27"/>
-<meta property="article:created" itemprop="dateCreated" content="2020-12-27"/>
+<meta property="article:published" itemprop="datePublished" content="2021-02-04"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-02-04"/>
 <meta name="article:author" content="Arthur V. Rodrigues"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
+<meta property="og:title" content="Arthur V. Rodrigues: ggplot - parte 1"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
-<meta property="og:url" content="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
-<meta property="og:image" content="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/img1.jpg"/>
-<meta property="og:locale" content="pt"/>
+<meta property="og:description" content="A short description of the post."/>
+<meta property="og:url" content="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"/>
+<meta property="og:image" content="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/ggplot-parte-1_files/figure-html5/ilhas1-1.png"/>
+<meta property="og:image:width" content="1248"/>
+<meta property="og:image:height" content="768"/>
+<meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Arthur V. Rodrigues"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
-<meta property="twitter:description" content="Sobre as ingnorâncias que me movem na pesquisa acadêmica"/>
-<meta property="twitter:url" content="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
-<meta property="twitter:image" content="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/img1.jpg"/>
+<meta property="twitter:title" content="Arthur V. Rodrigues: ggplot - parte 1"/>
+<meta property="twitter:description" content="A short description of the post."/>
+<meta property="twitter:url" content="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"/>
+<meta property="twitter:image" content="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/ggplot-parte-1_files/figure-html5/ilhas1-1.png"/>
+<meta property="twitter:image:width" content="1248"/>
+<meta property="twitter:image:height" content="768"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica"/>
-<meta name="citation_fulltext_html_url" content="https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"/>
-<meta name="citation_online_date" content="2020/12/27"/>
-<meta name="citation_publication_date" content="2020/12/27"/>
+<meta name="citation_title" content="Arthur V. Rodrigues: ggplot - parte 1"/>
+<meta name="citation_fulltext_html_url" content="https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"/>
+<meta name="citation_online_date" content="2021/02/04"/>
+<meta name="citation_publication_date" content="2021/02/04"/>
 <meta name="citation_author" content="Arthur V. Rodrigues"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft","lang","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Uma breve história da minha trajetória acadêmica"]},{"type":"character","attributes":{},"value":["Sobre as ingnorâncias que me movem na pesquisa acadêmica"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Arthur V. Rodrigues"]}]}]},{"type":"character","attributes":{},"value":["12-27-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["pt"]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["ggplot - parte 1"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Arthur V. Rodrigues"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["02-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"]},{"type":"character","attributes":{},"value":["https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["img1.jpg","uma-breve-histria-da-minha-trajetria-acadmica_files/anchor-4.2.2/anchor.min.js","uma-breve-histria-da-minha-trajetria-acadmica_files/bowser-1.9.3/bowser.min.js","uma-breve-histria-da-minha-trajetria-acadmica_files/distill-2.2.21/template.v2.js","uma-breve-histria-da-minha-trajetria-acadmica_files/jquery-1.11.3/jquery.min.js","uma-breve-histria-da-minha-trajetria-acadmica_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["ggplot-parte-1_files/anchor-4.2.2/anchor.min.js","ggplot-parte-1_files/bowser-1.9.3/bowser.min.js","ggplot-parte-1_files/distill-2.2.21/template.v2.js","ggplot-parte-1_files/figure-html5/ilhas1-1.png","ggplot-parte-1_files/figure-html5/ilhas2-1.png","ggplot-parte-1_files/figure-html5/ilhas3-1.png","ggplot-parte-1_files/figure-html5/ilhas3-2.png","ggplot-parte-1_files/header-attrs-2.6/header-attrs.js","ggplot-parte-1_files/jquery-1.11.3/jquery.min.js","ggplot-parte-1_files/popper-2.6.0/popper.min.js","ggplot-parte-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","ggplot-parte-1_files/tippy-6.2.7/tippy-light-border.css","ggplot-parte-1_files/tippy-6.2.7/tippy.css","ggplot-parte-1_files/tippy-6.2.7/tippy.umd.min.js","ggplot-parte-1_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2421,7 +2424,12 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.6/header-attrs.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
@@ -2437,7 +2445,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Uma breve história da minha trajetória acadêmica","description":"Sobre as ingnorâncias que me movem na pesquisa acadêmica","authors":[{"author":"Arthur V. Rodrigues","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2020-12-27T00:00:00.000-03:00","citationText":"Rodrigues, 2020"}
+{"title":"ggplot - parte 1","description":"A short description of the post.","authors":[{"author":"Arthur V. Rodrigues","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-04T00:00:00.000-03:00","citationText":"Rodrigues, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2481,57 +2489,106 @@ Data Visualization
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Uma breve história da minha trajetória acadêmica</h1>
+<h1>ggplot - parte 1</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Sobre as ingnorâncias que me movem na pesquisa acadêmica</p>
+<p><p>A short description of the post.</p></p>
 </div>
 
 <div class="d-byline">
-  Arthur V. Rodrigues  
+  Arthur V. Rodrigues true 
   
-<br/>12-27-2020
+<br/>02-04-2021
 </div>
 
 <div class="d-article">
-<p><em>This article is available only in Portuguese</em></p>
-<p>Em um momento da vida tive a oportunidade de decidir que caminho profissional eu gostaria de trilhar. Eu não era um grande aficionado por ciência, mas achava fascinante o mundo da pesquisa científica; a ideia de que podemos descobrir algo ainda não sabido. Logo percebi que me interessava pelo mundo natural e que o tipo de pesquisa que me interessava tinha a ver com biologia.</p>
-<p>Ingressei no curso de Ciências Biológicas e, aos trancos e barrancos, iniciava minha trajetória no mundo acadêmico. Logo de início me deparei com algo que me soou um contrassenso. Eu, filho de um marceneiro, natural da Mata Atlântica, não conhecia absolutamente nada sobre plantas, eis que meu primeiro interesse se revela: “Preciso saber disso!”.</p>
-<p>Aos poucos, esse interesse me levou a trabalhar no <a href="https://sites.google.com/view/botanica-furb/p%C3%A1gina-inicial">Laboratório de Botânica (FURB)</a>, onde tive a sorte de participar, ainda que cadastrando plantas no sistema do <a href="http://www.furb.br/herbario">Herbário</a>, de um grande projeto de inventário das florestas de Santa Catarina, o [Inventário Florístico Florestal de Santa Catarina (IFFSC)](<a href="https://www.iff.sc.gov.br/" class="uri">https://www.iff.sc.gov.br/</a>. Lá pude ver de perto a magnitude da diversidade de plantas que a Mata Atlântica possui. No período de um ano, em que trabalhei cadastrando plantas no sistema, o herbário saltou de 15 mil para 30 mil plantas na coleção, um volume absurdo, proveniente basicamente da Floresta Ombrófila Densa.</p>
-<div class="layout-chunk" data-layout="l-page">
-<div class="figure">
-<img src="img1.jpg" alt="Paisagem de Mata Atlantica. Camboriu - SC" width="4096" />
-<p class="caption">
-(#fig:unnamed-chunk-1)Paisagem de Mata Atlantica. Camboriu - SC
-</p>
+Explorando:
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Instalar o pacote:</span>
+<span class='co'># install.packages("palmerpenguins")</span>
+<span class='co'># carregar o pacote</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://allisonhorst.github.io/palmerpenguins/'>palmerpenguins</a></span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>penguins</span><span class='op'>)</span>
+</code></pre>
 </div>
+<pre><code>tibble [344 x 8] (S3: tbl_df/tbl/data.frame)
+ $ species          : Factor w/ 3 levels &quot;Adelie&quot;,&quot;Chinstrap&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ island           : Factor w/ 3 levels &quot;Biscoe&quot;,&quot;Dream&quot;,..: 3 3 3 3 3 3 3 3 3 3 ...
+ $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...
+ $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...
+ $ flipper_length_mm: int [1:344] 181 186 195 NA 193 190 181 195 193 190 ...
+ $ body_mass_g      : int [1:344] 3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...
+ $ sex              : Factor w/ 2 levels &quot;female&quot;,&quot;male&quot;: 2 1 1 NA 1 2 1 2 NA NA ...
+ $ year             : int [1:344] 2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...</code></pre>
 </div>
-<p>A Mata Atlântica saltava aos meus olhos, fosse no meu trabalho dentro do herbário, fosse nas frequentes viagens que fazia de ônibus entre Blumenau e o litoral de Santa Catarina para visitar minha família. Durante essas viagens, que duravam cerca de duas horas, ao observar a paisagem com morros cobertos de floresta, cidades na beira do rio e as planícies produzindo arroz, novas ignorâncias iam sendo descobertas: “- O que faz com que tenhamos essa floresta tão exuberante? Como é que pode comportar tanta diversidade?”. Foi assim que a ecologia me capturou.</p>
-<p>Logo descobri que essa não era apenas uma ignorância minha, mas a ciência também não tinha uma resposta clara e objetiva para ela. Descobri que a pergunta que me motivava a partir daquele momento também já havia intrigado os mais brilhantes naturalistas, e continua sendo uma pergunta central de um vasto campo de pesquisa e saber científico. Algo que tem impulsionado estudos em ciências naturais desde o século XIX.</p>
-<p>Eis que termino minha graduação e entro no mestrado, focado em aplicar uma abordagem funcional no estudo das comunidades florestais da minha região. De volta ao Laboratório de Botânica, e com apoio fundamental do IFFSC, coletei atributos funcionais para um grande conjunto de espécies, abrangendo funções foliares, de caule, de uso de água e de sementes. Isso gerou minha primeira publicação, que apresenta o banco de dados, e foi acompanhada, na dissertação, de uma avaliação das estratégias de vida dessas plantas e ainda uma avaliação da relação de clima e diversidade, e da diversidade com a biomassa das comunidades. Esses últimos trabalhos ainda não foram publicados em revistas científicas.</p>
-<p>No mestrado, meu foco estava na escala local e regional, eu estava preocupado em como o clima e intervenção humana, dada pela fragmentação Mata Atlântica, moldava os atributos das comunidades, e como isso poderia influenciar em serviços ecossistêmicos que essas florestas proveem. No doutorado dei um passo a mais, busquei atacar outra fronteira no meu conhecimento: “como essas relações que eu observo hoje estão relacionadas com o que aconteceu no passado?”.</p>
-<p>Hoje, durante meu doutorado, investigo como a história evolutiva de um bioma pode explicar o padrão de diversidade que observamos atualmente. Estou trabalhando com um grupo bem representativo na diversidade de árvores da Mata Atlântica, a família Myrtaceae. Assim, tenho utilizado ferramentas da biogeografia e macroevolução para avançar mais um pouco no entendimento da diversidade desse bioma. A cada passo desses, me sinto sendo impulsionado a avançar sobre as fronteiras que surgem, cativado pelas novas ignorâncias que descubro em mim.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Onde vivem os pinguins?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span>
+
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>penguins</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>island</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span><span class='op'>)</span> 
+</code></pre>
+</div>
+<p><img src="ggplot-parte-1_files/figure-html5/ilhas1-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>penguins</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>island</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>species</span><span class='op'>)</span> 
+</code></pre>
+</div>
+<p><img src="ggplot-parte-1_files/figure-html5/ilhas2-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>penguins</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>island</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># preencher das barras com cores de </span>
+  <span class='co'># acordo com a espécie</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>species</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>species</span><span class='op'>)</span> 
+</code></pre>
+</div>
+<img src="ggplot-parte-1_files/figure-html5/ilhas3-1.png" width="624" />
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># definir as cores dos pinguins</span>
+<span class='va'>pen_cols</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"darkorange"</span>,<span class='st'>"purple"</span>,<span class='st'>"cyan4"</span><span class='op'>)</span>
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span><span class='va'>penguins</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>island</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># preencher das barras com cores de </span>
+  <span class='co'># acordo com a espécie</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_bar</a></span><span class='op'>(</span><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='va'>species</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_wrap.html'>facet_wrap</a></span><span class='op'>(</span><span class='op'>~</span><span class='va'>species</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># configurar as cores manualmente</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_manual.html'>scale_fill_manual</a></span><span class='op'>(</span>values <span class='op'>=</span> <span class='va'>pen_cols</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='co'># alterando o nome dos eixos</span>
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>y <span class='op'>=</span> <span class='st'>"Num. de pinguins"</span>, x <span class='op'>=</span> <span class='st'>"Ilhas"</span><span class='op'>)</span>
+</code></pre>
+</div>
+<p><img src="ggplot-parte-1_files/figure-html5/ilhas3-2.png" width="624" /></p>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
     <span class="disqus-comments">
       <i class="fas fa-comments"></i>
       &nbsp;
-      <span class="disqus-comment-count" data-disqus-identifier="posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/">Comment on this article</span>
+      <span class="disqus-comment-count" data-disqus-identifier="posts/2021-02-04-ggplot-parte-1/">Comment on this article</span>
     </span>
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://twitter.com/share?text=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica&amp;url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F">
+      <a href="https://twitter.com/share?text=ggplot%20-%20parte%201&amp;url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2021-02-04-ggplot-parte-1%2F">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F&amp;title=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2021-02-04-ggplot-parte-1%2F&amp;title=ggplot%20-%20parte%201">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://pinterest.com/pin/create/link/?url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F&amp;description=Uma%20breve%20hist%C3%B3ria%20da%20minha%20trajet%C3%B3ria%20acad%C3%AAmica">
+      <a href="https://pinterest.com/pin/create/link/?url=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2021-02-04-ggplot-parte-1%2F&amp;description=ggplot%20-%20parte%201">
         <i class="fab fa-pinterest"></i>
       </a>
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica%2F">
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Favrodrigues.github.io%2Fposts%2F2021-02-04-ggplot-parte-1%2F">
         <i class="fab fa-facebook"></i>
       </a>
     </span>
@@ -2540,8 +2597,8 @@ Data Visualization
   <div id="disqus_thread"></div>
   <script type="text/javascript" cookie-consent="functionality">
 var disqus_config = function () {
-  this.page.url = 'https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/';
-  this.page.identifier = 'posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/';
+  this.page.url = 'https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/';
+  this.page.identifier = 'posts/2021-02-04-ggplot-parte-1/';
 };
 (function() {
   var d = document, s = d.createElement('script');
@@ -2564,13 +2621,13 @@ var disqus_config = function () {
 <div class="appendix-bottom">
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Rodrigues (2020, Dec. 27). Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica. Retrieved from https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/</pre>
+  <pre class="citation-appendix short">Rodrigues (2021, Feb. 4). Arthur V. Rodrigues: ggplot - parte 1. Retrieved from https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/</pre>
   <p>BibTeX citation</p>
-  <pre class="citation-appendix long">@misc{rodrigues2020uma,
+  <pre class="citation-appendix long">@misc{rodrigues2021ggplot,
   author = {Rodrigues, Arthur V.},
-  title = {Arthur V. Rodrigues: Uma breve história da minha trajetória acadêmica},
-  url = {https://avrodrigues.github.io/posts/2020-12-27-uma-breve-histria-da-minha-trajetria-acadmica/},
-  year = {2020}
+  title = {Arthur V. Rodrigues: ggplot - parte 1},
+  url = {https://avrodrigues.github.io/posts/2021-02-04-ggplot-parte-1/},
+  year = {2021}
 }</pre>
 </div>
 <!--/radix_placeholder_appendices-->

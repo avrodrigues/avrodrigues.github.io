@@ -1,0 +1,126 @@
+---
+title: "ggplot - parte 1"
+description: |
+  A short description of the post.
+author:
+  - name: Arthur V. Rodrigues
+    url: {}
+date: 02-04-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Explorando:
+
+```{r load}
+# Instalar o pacote:
+# install.packages("palmerpenguins")
+# carregar o pacote
+library(palmerpenguins)
+library(dplyr)
+str(penguins)
+
+```
+
+Onde vivem os pinguins?
+
+```{r ilhas1}
+library(ggplot2)
+
+ggplot(penguins, aes(x = island)) +
+  geom_bar() 
+
+```
+
+```{r ilhas2}
+ggplot(penguins, aes(x = island)) +
+  geom_bar() +
+  facet_wrap(~species) 
+
+```
+
+```{r ilhas3}
+
+# definir as cores dos pinguins
+pen_cols <- c("darkorange","purple","cyan4")
+ggplot(penguins, aes(x = island)) +
+  # preencher das barras com cores de 
+  # acordo com a espécie
+  geom_bar(aes(fill = species)) +
+  facet_wrap(~species) +
+  # configurar as cores manualmente e mudar o tílulo da legenda
+  scale_fill_manual(values = pen_cols, name = "Espécies") +
+  # alterando o nome dos eixos
+  labs(y = "Num. de pinguins", x = "Ilhas")
+
+```
+
+```{r ilhas4}
+
+ggplot(penguins, aes(x = island)) +
+  geom_bar(aes(fill = species)) +
+  facet_wrap(~species) +
+  scale_fill_manual(values = pen_cols, name = "Espécies") +
+  labs(y = "Num. de pinguins", x = "Ilhas") +
+  theme(legend.position = "bottom")
+
+
+ggplot(penguins, aes(x = species)) +
+  geom_bar(aes(fill = species)) +
+  facet_wrap(~island) +
+  scale_fill_manual(values = pen_cols, name = "Espécies") +
+  labs(y = "Num. de pinguins", x = "") +
+  theme(legend.position = "bottom")
+
+```
+
+# Há como diferenciar as espécies pela morfologia?
+
+```{r morfo1}
+
+ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(
+    aes(color = species),
+    size = 3, 
+    alpha = 0.5
+    ) +
+  scale_color_manual(values = pen_cols, name = "Espécies") +
+  labs(x = "Comprimento do bico (mm)", y = "Profundidade do bico (mm)") +
+  theme(legend.position = "bottom")
+
+
+```
+
+```{r sexo1}
+library(ggridges)
+penguins %>% 
+  filter(!is.na(sex)) %>% 
+ggplot(aes(x = bill_length_mm, y = species, fill = species)) +
+  geom_density_ridges(aes(group = sex)) 
+  scale_alpha_manual(values = c(0.3,0.7), guide = "legend") +
+  scale_fill_manual(values = pen_cols, name = "Espécies") 
+  facet_grid(species~.) +
+  labs(x = "Tamanho do corpo (Kg)", y = "Densidade") +
+  theme(legend.position = "bottom")
+
+penguins %>% 
+  filter(!is.na(sex),
+         species == "Adelie") %>% 
+  ggplot(aes(x = bill_length_mm, y = body_mass_g)) +
+  geom_point(aes(color = species, group = sex, alpha = sex)) +
+  scale_alpha_manual(values = c(0.3,0.7), guide = "legend") +
+  scale_color_manual(values = pen_cols, name = "Espécies") 
+  facet_grid(species~.) 
+  
+d <- data.frame(x = rep(1:5, 3), y = c(rep(0, 5), rep(1, 5), rep(3, 5)),
+                height = c(0, 1, 3, 4, 0, 1, 2, 3, 5, 4, 0, 5, 4, 4, 1))
+ggplot(d, aes(x, y, height = height, group = y)) + geom_ridgeline(fill="lightblue")
+names(penguins)
+
+```

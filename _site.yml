@@ -3,7 +3,7 @@ title: "Arthur V. Rodrigues"
 theme: my_theme.css
 description: |
   Arthur V. Rodrigues
-base_url: https://avrodrigues.github.io/avr_site
+base_url: https://avrodrigues.github.io/
 output_dir: "docs"
 
 collections:

@@ -1,10 +1,20 @@
 ---
 title: "Shiny apps"
-description: Some shiny apps I have developed
+description: Here I show some shiny apps I have developed. Click in the title to see the app.
 output:
   distill::distill_article:
     toc: true
 ---
+
+## [Tree Ferns distribution and diversity](https://avrodrigues.shinyapps.io/tferns/)
+
+![](img/tree_ferns.png)
+This app is part of the paper [Expected impacts of climate change on tree ferns distribution and diversity patterns in subtropical Atlantic Forest](https://doi.org/10.1016/j.pecon.2021.03.007).
+
+In this paper, we show predictions of change in the distribution and diversity of tree ferns in the subtropical Atlantic Forest due to climate change. 
+
+In the app, you can see the predictions to the distribution of each species (13) and to the diversity in 2050.
+
 
 ## [naturaList](https://avrodrigues.shinyapps.io/naturaList/)
 

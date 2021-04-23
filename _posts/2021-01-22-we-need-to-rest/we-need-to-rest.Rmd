@@ -1,0 +1,48 @@
+---
+title: "We need to rest"
+description: |
+  To work well, we need rest 
+categories:
+  - Opinion
+  - English
+author:
+  - name: Arthur V. Rodrigues
+    url: {}
+date: 01-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+
+knitr::include_graphics("daan-stevens-pUq95SrGlB0-unsplash.jpg")
+
+```
+
+[*Versão em Português*](https://avrodrigues.github.io/posts/2021-01-22-precisamos-descansar/)
+
+We live in a society which have the productivity as a central axis of the work. In the academic world it is not different. In general, the relevance of a scientist is measured by the amount of publication and citation of its work. All of this puts a big pressure in who is beginning in the scientific career. At the
+beginning is already known that it is important to build a CV strong enough to be competitive.
+
+However, little is said about how to use the time for those who are at the beginning of the journey, within graduate school. It is usual that, due to the competitive context of the academy environment, it is understood that it is necessary to work many hours a day to be able to produce enough for a successful career. Success measured in numbers of published articles. This logic of work many hours a day to be productive is wrong and few people realize the problem.
+
+The first point I would like to raise is: graduate school is seen as study, when in fact it is work. In Brazil, this notion is reinforced by the scholarship holder condition of most graduate students. These students are developing research and are the main science workforce around the world. Therefore, they work should be faced as a job. In a format like that of a trainee in the private sector, but it should be a job.
+
+Looking at it as a job, it is important to define how many hours will be worked. The most important thing about establishing working hours, and subsequently how those hours are distributed throughout the week, is to be clear when it is **not** working time. This is the second point, and the most important one I want to discuss.
+
+Moments of non-work are essential for productive and creative work. In addition to the productivity that the context requires, in academic research we deal with problem solving at the frontier of knowledge and this requires creativity. You need to rest! Rest allows us to use our creativity and concentration to the fullest. And in that moment of rest, we cannot have those famous feelings of "I should be writing", "I should be reading", or any other that is worth it.
+
+To have this rest without guilt, the graduate student needs to have a clear definition of what his working hours are. This does not mean that it is necessary to install a timecard in the laboratory so that everyone has their working hours evaluated. Setting working hours means that you must **not** be working all the
+time, it means that you should have rest.
+
+This can be adjusted in several ways: according to the type of research developed, according to the time of the graduate student's best concentration, according to the research phase, among other possibilities that can be imagined. The important thing is to be clear when you should be working and when you
+should not be working.
+
+I believe that if it is presented clearly to the graduate student that he must face the activities that will come as a job and that he needs to define his working hours, many of the psychological problems so common in the academy can be avoided. Especially if this is presented at the beginning of their academic
+activities, either in the master's or doctorate.

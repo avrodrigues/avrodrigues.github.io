@@ -24,6 +24,7 @@ Explorando:
 # carregar o pacote
 library(palmerpenguins)
 library(dplyr)
+library(ggridges)
 str(penguins)
 
 ```
@@ -97,17 +98,17 @@ ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
 
 ```
 
-```{r sexo1}
-library(ggridges)
-penguins %>% 
-  filter(!is.na(sex)) %>% 
-ggplot(aes(x = bill_length_mm, y = species, fill = species)) +
-  geom_density_ridges(aes(group = sex)) 
-  scale_alpha_manual(values = c(0.3,0.7), guide = "legend") +
-  scale_fill_manual(values = pen_cols, name = "Espécies") 
-  facet_grid(species~.) +
-  labs(x = "Tamanho do corpo (Kg)", y = "Densidade") +
-  theme(legend.position = "bottom")
+```{r sexo1 }
+
+#penguins %>% 
+#  filter(!is.na(sex)) %>% 
+#ggplot(aes(x = bill_length_mm, y = species, fill = species)) +
+#  geom_density_ridges(aes(y = species, group = sex)) 
+#  scale_alpha_manual(values = c(0.3,0.7), guide = "legend") +
+#  scale_fill_manual(values = pen_cols, name = "Espécies") 
+#  facet_grid(species~.) +
+#  labs(x = "Tamanho do corpo (Kg)", y = "Densidade") +
+#  theme(legend.position = "bottom")
 
 penguins %>% 
   filter(!is.na(sex),

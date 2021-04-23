@@ -30,8 +30,6 @@ navbar:
       href: pub.html
     - icon: fab fa-twitter
       href: https://twitter.com/avrodrigues_
-    - icon: fab fa-youtube
-      href: https://www.youtube.com/channel/UCRT_JrPWI29gL19YEAt2Kbw
     - icon: fab fa-github
       href: https://github.com/avrodrigues/
 

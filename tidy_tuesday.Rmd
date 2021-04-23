@@ -7,6 +7,28 @@ output:
     toc-depth: 3
 ---
 ## 2021
+
+### Week 16
+#### Netflix movies and TV shows
+[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week17)
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week17/netflix.png)
+
+
+### Week 14
+#### Bias in the makeup shades
+[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week14)
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week14/makeup.png)
+
+### Week 08
+#### Du Bois Challenge
+The challenge was to recreate a visualization made by W.E.B Du Bois
+
+[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week08)
+
+![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week08/dubois.png)
+
 ### Week 04
 #### Kenya census 
 [Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week04)

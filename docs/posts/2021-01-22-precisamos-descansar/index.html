@@ -2144,11 +2144,17 @@ d-appendix {
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+:root {
+  --grey-code: #efefef;
+  --white: #ffffff;
+}
+
+
 html {
   /*-- Main font sizes --*/
   --title-size:      42px;
   --body-size:       1.06rem;
-  --code-size:       14px;
+  --code-size:       12px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
@@ -2171,7 +2177,7 @@ body {
 
 /*-- ARTICLE METADATA --*/
 d-byline {
-  --heading-size:    0.6rem;
+  --heading-size:    0.8rem;
   --heading-color:   rgba(0, 0, 0, 0.5);
   --body-size:       0.8rem;
   --body-color:      rgba(0, 0, 0, 0.8);
@@ -2264,6 +2270,26 @@ d-appendix {
   
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
+
+code {
+  font-family: 'Courier Prime', monospace;
+  background: var(--grey-code);
+  font-size: 0.8em;
+}
+
+d-article div.sourceCode pre{
+  border-left: 8px solid rgba(0,0,0,0.1);
+  font-family: 'Courier Prime', monospace;
+  background: var(--grey-code);
+  font-size: 0.8em;
+}
+
+d-article pre{
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8em;
+  background: var(--grey-code);
+}
+
 </style>
 <style type="text/css">
 /* base style */

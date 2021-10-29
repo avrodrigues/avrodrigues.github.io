@@ -104,7 +104,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","decription"]}},"value":[{"type":"character","attributes":{},"value":["Publications"]},{"type":"character","attributes":{},"value":["Here you find my sicentifc publications"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","decription"]}},"value":[{"type":"character","attributes":{},"value":["Publications"]},{"type":"character","attributes":{},"value":["Here you find my scientifc publications"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2122,11 +2122,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+  :root {
+    --grey-code: #efefef;
+    --white: #ffffff;
+  }
+
+
   html {
     /*-- Main font sizes --*/
     --title-size:      42px;
     --body-size:       1.06rem;
-    --code-size:       14px;
+    --code-size:       12px;
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
@@ -2149,7 +2155,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /*-- ARTICLE METADATA --*/
   d-byline {
-    --heading-size:    0.6rem;
+    --heading-size:    0.8rem;
     --heading-color:   rgba(0, 0, 0, 0.5);
     --body-size:       0.8rem;
     --body-color:      rgba(0, 0, 0, 0.8);
@@ -2242,6 +2248,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
+
+  code {
+    font-family: 'Courier Prime', monospace;
+    background: var(--grey-code);
+    font-size: 0.8em;
+  }
+
+  d-article div.sourceCode pre{
+    border-left: 8px solid rgba(0,0,0,0.1);
+    font-family: 'Courier Prime', monospace;
+    background: var(--grey-code);
+    font-size: 0.8em;
+  }
+
+  d-article pre{
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8em;
+    background: var(--grey-code);
+  }
+
   </style>
   <style type="text/css">
   /* base style */
@@ -2467,8 +2493,73 @@ Data Visualization
 
 
 <div class="d-article">
-<p><em>In construction</em></p>
-<p><a href="http://lattes.cnpq.br/7572293065197704">Lattes</a> | <a href="https://scholar.google.com.br/citations?hl=pt-BR&amp;view_op=list_works&amp;gmla=AJsN-F7Jy2R3XorfVDOiGwdKosgS4Mju8ccGdpcNH3SK6pWP8pKRM_L82oo1aBr8xvt6i35y9PFxuDFZH5gLMSPirIR11-TpZxT3XURwoqSguPNu-7Z9cXWUL-0qKa_EaTXaRblE3z1r&amp;user=jsHj1g8AAAAJ">Google Scholar</a> | <a href="https://orcid.org/0000-0003-2656-558X">ORCID</a></p>
+<p><strong>Links:</strong> <a href="http://lattes.cnpq.br/7572293065197704">Lattes</a> | <a href="https://scholar.google.com.br/citations?hl=pt-BR&amp;view_op=list_works&amp;gmla=AJsN-F7Jy2R3XorfVDOiGwdKosgS4Mju8ccGdpcNH3SK6pWP8pKRM_L82oo1aBr8xvt6i35y9PFxuDFZH5gLMSPirIR11-TpZxT3XURwoqSguPNu-7Z9cXWUL-0qKa_EaTXaRblE3z1r&amp;user=jsHj1g8AAAAJ">Google Scholar</a> | <a href="https://orcid.org/0000-0003-2656-558X">ORCID</a></p>
+<div class="layout-chunk" data-layout="l-body">
+<h2>
+2021
+</h2>
+<h4>
+Article
+</h4>
+<div>
+<p>Dijk, A.V; Nakamura, G; Rodrigues, A.V; Maestri, R; Duarte, L. (2021) <b>Imprints of tropical niche conservatism and historical dispersal in the radiation of Tyrannidae (Aves: Passeriformes).</b> <i>Biological Journal of the Linnean Society.</i> <link><a href="https://doi.org/10.1093/biolinnean/blab079" class="uri">https://doi.org/10.1093/biolinnean/blab079</a></link></p>
+</div>
+<div>
+<p>Gasper, A.L de; Grittz, S.L, Russi, C.H; Schwartz, C.E; Rodrigues, A.V. (2021) <b>Expected impacts of climate change on tree ferns distribution and diversity patterns in subtropical Atlantic Forest.</b> <i>Perspectives in Ecology and Conservation.</i> <link><a href="https://doi.org/10.1016/j.pecon.2021.03.007" class="uri">https://doi.org/10.1016/j.pecon.2021.03.007</a></link></p>
+</div>
+<h4>
+R Package
+</h4>
+<div>
+<p>Rodrigues, A.V; Nakamura, G; Duarte, L. (2021) <b>naturaList: Classify Occurrences by Confidence Levels in the Species ID.</b> <i>CRAN - R package version 0.4.2</i> <link><a href="https://github.com/avrodrigues/naturaList" class="uri">https://github.com/avrodrigues/naturaList</a></link></p>
+</div>
+<br/><br/>
+<h2>
+2020
+</h2>
+<h4>
+Article
+</h4>
+<div>
+<p>Costa, L.M.S; Goetze, M; Rodrigues, A.V; Seger, G.D. dos; Bered, F. (2020) <b>Global rheophytes data set: angiosperms and gymnosperms.</b> <i>Ecology.</i> <link><a href="https://doi.org/10.1002/ecy.3056" class="uri">https://doi.org/10.1002/ecy.3056</a></link></p>
+</div>
+<div>
+<p>Lingner, D.V; Rodrigues, A.V; Oliveira, L.Z; Gasper A.L. de; Vibrans, A.C. (2020) <b>Modelling changes in forest attributes driven by human activities at different spatial scales in the subtropical Atlantic Forest.</b> <i>Biodiversity and Conservation.</i> <link><a href="https://doi.org/10.1007/s10531-020-01935-5" class="uri">https://doi.org/10.1007/s10531-020-01935-5</a></link></p>
+</div>
+<div>
+<p>Kattge, J; Bönisch, G; Díaz, S; […]; Rodrigues, A.V; […]. (2020) <b>TRY plant trait database–enhanced coverage and open access.</b> <i>Global Change Biology.</i> <link><a href="https://doi.org/10.1111/gcb.14904" class="uri">https://doi.org/10.1111/gcb.14904</a></link></p>
+</div>
+<h4>
+Preprint
+</h4>
+<div>
+<p>Rodrigues, A.V; Nakamura, G; Duarte, L. (2020) <b>naturaList: a package to classify occurrence records in levels of confidence in species identification.</b> <i>bioRxiv.</i> <link><a href="https://doi.org/10.1101/2020.05.26.115220" class="uri">https://doi.org/10.1101/2020.05.26.115220</a></link></p>
+</div>
+<br/><br/>
+<h2>
+2019
+</h2>
+<h4>
+Article
+</h4>
+<div>
+<p>Sevegnani, L; Gasper, A.L. de; Rodrigues, A.V; Lingner, D.V; Meyer, L; Uhlmann, A; Oliveira, L.Z; Vibrans, A.C. (2019) <b>Structure and diversity of the Araucaria forest in southern Brazil: biotic homogenisation hinders the recognition of floristic assemblages related to altitude.</b> <i>Southern Forests: a Journal of Forest Science.</i> <link><a href="https://doi.org/10.2989/20702620.2019.1636193" class="uri">https://doi.org/10.2989/20702620.2019.1636193</a></link></p>
+</div>
+<br/><br/>
+<h2>
+2018
+</h2>
+<h4>
+Article
+</h4>
+<div>
+<p>Bruelheide, H; Dengler, J; […]; Rodrigues, A.V; […]; Ute Jandt. (2018) <b>Global trait–environment relationships of plant communities.</b> <i>Nature Ecology &amp; Evolution.</i> <link><a href="https://doi.org/10.1038/s41559-018-0699-8" class="uri">https://doi.org/10.1038/s41559-018-0699-8</a></link></p>
+</div>
+<div>
+<p>Rodrigues, A.V; Bones, F.L.V; Schneiders, A; Oliveira, L.Z; Vibrans, A.C; Gasper, A.L. de. (2018) <b>Plant trait dataset for tree-like growth forms species of the subtropical Atlantic rain forest in Brazil.</b> <i>Data.</i> <link><a href="https://doi.org/10.3390/data3020016" class="uri">https://doi.org/10.3390/data3020016</a></link></p>
+</div>
+<p><br/><br/></p>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

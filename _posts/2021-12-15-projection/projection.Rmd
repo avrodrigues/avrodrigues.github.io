@@ -1,0 +1,135 @@
+---
+title: "Explorando projeções geográficas"
+description: |
+  transformações de sistema de coordenadas geográficas
+author:
+  - name: Arthur V. Rodrigues
+    url: {}
+date: 12-15-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r}
+library(sf)
+library(spData)
+
+sf_proj_info(type = "proj")
+
+vector_filepath <- system.file("shapes/world.gpkg", package = "spData")
+new_vector <- read_sf(vector_filepath)
+
+st_crs(new_vector)$IsGeographic
+st_crs(new_vector)$units_gdal
+st_crs(new_vector)$srid
+st_crs(new_vector)$proj4string
+
+
+new_vector <- st_set_crs(new_vector, "EPSG:4326")
+```
+[map projections](https://pubs.er.usgs.gov/publication/70047422)
+
+Importantly, the st_crs() and crs() functions do not alter coordinates’ values or geometries. Their role is only to set a metadata information about the object CRS. We will expand on CRSs and explain how to project from one CRS to another in Chapter 6.
+
+```{r}
+
+library(sf)
+library(terra)
+library(dplyr)
+library(spData)
+#> Warning: multiple methods tables found for 'approxNA'
+library(spDataLarge)
+```
+
+```{r}
+
+london = data.frame(lon = -0.1, lat = 51.5) %>% 
+  st_as_sf(coords = c("lon", "lat"))
+st_is_longlat(london)
+
+london_geo = st_set_crs(london, "EPSG:4326")
+st_is_longlat(london_geo)
+#> [1] TRUE
+london_proj = data.frame(x = 530000, y = 180000) %>% 
+  st_as_sf(coords = 1:2, crs = "EPSG:27700")
+#> [1] NA
+```
+
+
+```{r}
+london2 = st_transform(london_geo, "EPSG:27700")
+st_distance(london2, london_proj)
+
+
+```
+
+
+#### terra package CRS
+
+```{r}
+library(terra)
+f <- system.file("ex/lux.shp", package="terra")
+p <- vect(f)
+p
+
+plot(p)
+```
+
+
+Transforming vector data
+```{r}
+newcrs <- "+proj=robin +datum=WGS84"
+rob <- terra::project(p, newcrs)
+plot(rob)
+```
+
+
+Transforming raster data
+
+Vector data can be transformed from lon/lat coordinates to planar and back without loss of precision. This is not the case with raster data. A raster consists of rectangular cells of the same size (in terms of the units of the CRS; their actual size may vary). It is not possible to transform cell by cell. For each new cell, values need to be estimated based on the values in the overlapping old cells. If the values are categorical data, the “nearest neighbor” method is commonly used. Otherwise some sort of interpolation is employed (e.g. “bilinear”).
+
+Because projection of rasters affects the cell values, in most cases you will want to avoid projecting raster data and rather project vector data. But here is how you can project raster data.
+
+```{r}
+
+r <- rast(xmin=-110, xmax=-90, ymin=40, ymax=60, ncols=40, nrows=40)
+values(r) <- 1:ncell(r)
+plot(r)
+```
+
+```{r}
+newcrs
+pr1 <- terra::project(r, newcrs)
+
+plot(pr1)
+
+```
+
+
+```{r}
+library(spda)
+
+prec.bio15 <- "clim_var_bio_15.tif"
+con_raster = rast(prec.bio15)
+crs(con_raster)
+
+com_SA_alber_equal_area <- project(con_raster, "ESRI:102033", method= "bilinear")
+plot(com_SA_alber_equal_area)
+
+lambert.az.ea <- "EPSG:9821"
+lambert.2 <- "+proj=laea  +lat_0=-15 +lon_0=-75"
+com_lambert.az.ea <- project(con_raster, lambert.2, method = "bilinear")
+plot(com_lambert.az.ea)
+
+crs(com_lambert.az.ea)
+
+```
+

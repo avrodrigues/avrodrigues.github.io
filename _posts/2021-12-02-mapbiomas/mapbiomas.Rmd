@@ -1,0 +1,23 @@
+---
+title: "Mudança no uso da terra"
+description: |
+  Explorando a dinâmica de mudança do uso da terra com o MapBiomas
+author:
+  - name: Arthur V. Rodrigues
+    url: {}
+date: 12-02-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+A ideia desse post é explorar a dinamica de mudança do uso da terra em um região do Brasil. 
+
+O mapbiomas tem dados de uso da terra de 1985 a 2020 para todo o território brasileiro. A ideia e criar alguma estatistica de que meça a dinamica no tempo, para explorar regiões que alternaram mais entre classes de uso, ou que tiveram mudanças mais drasticas. 
+

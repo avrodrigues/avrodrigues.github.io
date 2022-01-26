@@ -16,7 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 library(htmltools)
 library(dplyr)
 
-pub.data <- read.csv("data/academic_dataset.csv")
+pub.data <- read.csv("data/academic_dataset.csv") %>% 
+  filter(status == "Published")
 
 
 years <- unique(pub.data$year) %>% sort(decreasing = T)

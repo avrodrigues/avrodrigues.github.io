@@ -14,6 +14,42 @@ tibble(
   url_youtube = character()
 ) %>% 
   add_row(
+    status = "In preparation",
+    type_of_publication = "Article",
+    year = 2022,
+    title = "Diversification and lineage dispersal affect Myrcia diversity in the Atlantic Forest.",
+    authors = "Rodrigues. A.V; Nakamura G.; Vasconcelos, T; Duarte, L.",
+    # item_info = character(),
+    # url_text = character(),
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
+    status = "Under review",
+    type_of_publication = "Article",
+    year = 2022,
+    title = "naturaList: a package to classify occurrence records in levels of confidence in species identification.",
+    authors = "Rodrigues, A.V; Nakamura, G; Staggemeier, V.G; Duarte, L.",
+    item_info = "Ecological Informatics.",
+    # url_text = ""
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
+    status = "Under review",
+    type_of_publication = "Article",
+    year = 2022,
+    title = "A test of the fast-slow plant economy hypothesis in a subtropical rain forest.",
+    authors = "Rodrigues. A.V; Pastório, F.F; Bones, F.L.V; Esquivel-Muelbert, A; Vibrans, A.C; Gasper, A.L de.",
+    item_info = "Plant Ecology & Diversity.",
+    # url_text = character(),
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
     status = "Published",
     type_of_publication = "Article",
     year = 2021,
@@ -129,6 +165,18 @@ tibble(
     authors = "Rodrigues, A.V; Nakamura, G; Duarte, L.",
     item_info = "CRAN - R package version 0.4.2",
     url_text = "https://github.com/avrodrigues/naturaList"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2018,
+    title = "Morphological and molecular diversity of arbuscular mycorrhizal fungi in revegetated iron-mining site has the same magnitude of adjacent pristine ecosystems.",
+    authors = "Vieira, C.K; Marascalchi, M.N; Rodrigues, A.V; Armas, R.D. de; Stürmer, S.L.",
+    item_info = "Journal of environmental sciences.",
+    url_text = "https://doi.org/10.1016/j.jes.2017.08.019"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()

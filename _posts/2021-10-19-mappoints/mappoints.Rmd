@@ -43,7 +43,7 @@ knitr::include_graphics("bruno-salvini-M6igzF_7taw-unsplash.jpg")
 
 ## Carregando os pacotes {#pacotes}
 
-Primeiro, vou carregar todos os pacotes que serão utilizados ao longo do tutorial. Nos meus scripts, costumo organizar dessa forma: todos os pacotes o ínicio. E enquanto vou escrevendo o código, sempre que preciso de um novo pacote, incluio o carregamento dele no início do script. Assim, quando eu for utilizar o scrit novamente, todos os pacotes serão carregados antes de começar as análises. 
+Primeiro, vou carregar todos os pacotes que serão utilizados ao longo do tutorial. Nos meus scripts, costumo organizar dessa forma: todos os pacotes o ínicio. E enquanto vou escrevendo o código, sempre que preciso de um novo pacote, incluio o carregamento dele no início do script. Assim, quando eu for utilizar o script novamente, todos os pacotes serão carregados antes de começar as análises. 
 
 ```{r}
 # carregar pacotes --------------------
@@ -58,9 +58,9 @@ library(ggtext) # configurar visualização de texto no ggplot
 
 ## Baixando os dados de ocorrência 
 
-Vou baixar todos os registros de ocorrências de araucária da base de dados do [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) utilizandoo pacote `{rgbif}`. Na função `occ_search`, informei o nome da espécie e o limite de registros que a função deve retornar. Essa função tem como padrão retornar até 500 occorrências (argumento `limit = 500`). Primeiro utilizei a função informando apenas a espécie. Ela então retorna também , e depois alterei o `limit` pois a função retorna também quantas ocorrecias estão disponiveis. 
+Vou baixar todos os registros de ocorrências de araucária da base de dados do [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) utilizandoo pacote `{rgbif}`. Na função `occ_search()`, informei o nome da espécie e o limite de registros que a função deve retornar. Essa função tem como padrão retornar até 500 occorrências (argumento `limit = 500`). Primeiro utilizei a função informando apenas a espécie. Ela então retorna também , e depois alterei o `limit` pois a função retorna também quantas ocorrecias estão disponiveis. 
 
-Para o nosso objetivo de praticar a construção de mapas, podemos utilizar apenas os dados baixados com a função `occ_search`. Caso você deseje baixar dados para alguma publicação oficial, é recomendavel que utilize a função `occ_download`, que gera um arquivo de download com um identificador DOI ([Digital Object Identifier](https://en.wikipedia.org/wiki/Digital_object_identifier)). 
+Para o nosso objetivo de praticar a construção de mapas, podemos utilizar apenas os dados baixados com a função `occ_search()`. Caso você deseje baixar dados para alguma publicação oficial, é recomendavel que utilize a função `occ_download()`, que gera um arquivo de download com um identificador DOI ([Digital Object Identifier](https://en.wikipedia.org/wiki/Digital_object_identifier)). 
 
 
 ```{r}
@@ -87,7 +87,7 @@ araucaria.gbif$data %>%
 nrow(araucaria)
 ```
 
-Restaram 683 ocorrências com coordenadas geográficas. Agora, vamos fazer um mapa bem simples apenas para conferir como estão distribuídas as ocorrências. Aqui, vou utilizar um obejto com os polígonos dos paises do mundo, disponibilizados pelo pacote {`rnauralearth`}. O objeto chama-se `countries110`, e é da classe `SpatialPolygonsDataFrame`. Vou tranformá-lo para classe `sf` para gerar o mapa com o `{ggplot2}`. Além disso, vou transformar os dados de ocorrência para classe `sf` e definir a projeção geográfica igual a do mapa de paises. 
+Restaram 683 ocorrências com coordenadas geográficas. Agora, vamos fazer um mapa bem simples apenas para conferir como estão distribuídas as ocorrências. Aqui, vou utilizar um obejto com os polígonos dos paises do mundo, disponibilizados pelo pacote {`rnauralearth`}. O objeto chama-se `countries110`, e é da classe `SpatialPolygonsDataFrame`. Vou tranformá-lo para classe `sf` para gerar o mapa com o `{ggplot2}`. Além disso, vou transformar os dados de ocorrência para classe `sf` e definir a projeção geográfica igual a do mapa de países. 
 
 ```{r}
 class(countries110)
@@ -101,7 +101,7 @@ st_crs(arauc.sf) <- st_crs(country.sf)
 ```
 
 
-Feitas as transformações dos dados para `sf`, vamos ver como estão distribuídas as ocorrências num mapa. Utilizo a função `geom_sf` para plotar cada camada. Primeiro o mapa dos paises e sobre eles as ocorrências de araucária.
+Feitas as transformações dos dados para `sf`, vamos ver como estão distribuídas as ocorrências num mapa. Utilizo a função `geom_sf()` para plotar cada camada. Primeiro o mapa dos países e sobre eles as ocorrências de araucária.
 
 
 ```{r}
@@ -114,11 +114,11 @@ ggplot() +
 
 Aí está! Temos um mapa de pontos com registros da araucária em muitas partes do mundo!
 
-Porém, meu objetivo é mostrar os registro feitos em sua área de ocorrência nativa da araucária. Portanto, será necessário um pouco mais de manipulação de dados para chegarmos ao mapa final.
+Porém, meu objetivo é mostrar os registro feitos na área de ocorrência nativa da araucária. Portanto, será necessário um pouco mais de manipulação de dados para chegarmos ao mapa final.
 
 ## Filtrando os dados de ocorrência 
 
-Vou fazer uma limpeza nos dados e remover todas as ocorrências fora da área de ocorrência natural da araucária. Para me guiar nessa limpeza, vou utilizar informação da area de ocorrecia natural da espécie de duas fontes: o [Flora do Brasil](http://floradobrasil.jbrj.gov.br/jabot/floradobrasil/FB33971) e o [Plants of the World Online](http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:17518-2). 
+Vou fazer uma limpeza nos dados e remover todas as ocorrências fora da área de ocorrência natural da araucária. Para me guiar nessa limpeza, vou utilizar informação da área de ocorrência natural da espécie de duas fontes: o [Flora do Brasil](http://floradobrasil.jbrj.gov.br/jabot/floradobrasil/FB33971) e o [Plants of the World Online](http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:17518-2). 
 
 Com base nas informações desse sites, vou selecionar as ocorrencias no Sudeste e Sul do Brasil e na Região da Missões, na Argentina e Paraguai. Primeiro, vou selecionar as ocorrências no Brasil, Argentina e Uruguai, utilizando a função `st_intersection()`. Para isso vou criar um novo objeto apenas com os poligonos dos três países, selecionando estes a partir do objeto `country.sf` que contém todos os países. 
 
@@ -140,7 +140,7 @@ ggplot() +
 ```
 
 
-Ainda há alguns pontos na Argentina e Brasil que não fazem parte da area nativa da espécie, segundo as fontes que estou utilizando. Ao sul, vou excluir os pontos abaixo da latitude 34ºS, removendo os pontos em Buenos Aires; e ao norte vou excluir os pontos acima da latitude 18ºS, excluindo pontos fora do Sudeste brasileiro.
+Ainda há alguns pontos na Argentina e Brasil que não fazem parte da área nativa da espécie, segundo as fontes que estou utilizando. Ao sul, vou excluir os pontos abaixo da latitude 34ºS, removendo os pontos em Buenos Aires; e ao norte vou excluir os pontos acima da latitude 18ºS, excluindo pontos fora do Sudeste brasileiro.
 
 Com a função `st_bbox()`, vou definir os limites geográficos para a seleção, e com a função `st_crop()` vou manter apenas os pontos que caem dentro desses limites. 
 
@@ -158,13 +158,13 @@ ggplot() +
 
 ```
 
-Note que nesses dois passos de seleção utilizei duas estrategias diferentes. Na primeira, como o `st_intersection()` fiz um aseleção com pase em poligonos espaciais, no caso os mapas dos 3 países selecionados. Na segunda estatégia, defini um retângulo com a função `st_bbox()` e selecionei os pontos que estavam dentro desta 'caixa'. 
+Note que nesses dois passos de seleção utilizei duas estratégias diferentes. Na primeira, com o `st_intersection()` fiz uma seleção a partir de poligonos espaciais, no caso, os mapas dos 3 países selecionados. Na segunda estatégia, defini um retângulo com a função `st_bbox()` e selecionei os pontos que estavam dentro desta 'caixa'. 
 
-Agora que temos os dados de ocorrecia baixados e filtrados de acordo com o nosso objetivo, podemos contruir o mapa final. 
+Agora que temos os dados de ocorrência baixados e filtrados de acordo com o nosso objetivo, podemos construir o mapa final. 
 
 ## Construindo a visualização
 
-Nós já construímos um mapa com os dados de ocorrência usando a função `geom_sf()`. Agora a ideia é customizar a aparencia do mapa, usando o `{ggplot2}`. Além do `{ggplot2}`, vou usar outros dois pacotes para customizar o título do mapa, o `{showtext}`, para escolher uma fonte, e o `{ggtext}`, para deixar o nome da espécie em itálico. 
+Nós já fizemos um mapa com os dados de ocorrência usando a função `geom_sf()`. Agora a ideia é customizar a aparência do mapa, usando o `{ggplot2}`. Além do `{ggplot2}`, vou usar outros dois pacotes para customizar o título do mapa, o `{showtext}`, para escolher uma fonte, e o `{ggtext}`, para deixar o nome da espécie em itálico. 
 
 O mapa que vamos construir vai ficar assim:
 
@@ -175,7 +175,7 @@ knitr::include_graphics("araucaria_final.png")
 
 Mas vamos por partes.
 
-Primeiro, eu vou definir uma paleta de cores para utilizar no mapa. Para isso crei um objeto de classe `list` onde específico as cores, dando um nome e atribuindo o código de cor. Eu costumo utilizar o site [color-hex.com](https://www.color-hex.com/) para escolher as cores. Geralmente, escolher as cores leva um tempo, pois vou testando no mapa (ou gráfico) e vendo o que acho legal ou não. 
+Primeiro, eu vou definir uma paleta de cores para utilizar no mapa. Para isso crei um objeto de classe `list` onde específico as cores, dando um nome e atribuindo o código de cor. Eu costumo utilizar o site [color-hex.com](https://www.color-hex.com/) para escolher as cores. Geralmente, escolher as cores leva um tempo, pois vou testando no mapa (ou gráfico) e vendo o que acho legal. 
 
 Outra coisa que depende de tentativa e erro até gostar do resultado é a escolha da fonte. Neste mapa, eu vou utilizar fontes do [Google Fonts](https://fonts.google.com/), carregadas via `{showtext}` pois permitem apresentar um código reproduzivel. Em visualizações onde a reprodutibilidade não é essencial, eu prefiro baixar as fontes para o meu computador e utilizar com o pacote [`{ragg}`](https://github.com/r-lib/ragg). Outra opção para buscar por fontes é o site [DaFont](https://www.dafont.com/).
 
@@ -209,7 +209,7 @@ showtext_opts(dpi = 300)
 ```
 
 
-Outra coisa que vamos fazer de ínicio é definir os limites de latitude e longitude para o mapa. Faço isso criando uma lista con valores em graus decimais.
+Vamos definir os limites de latitude e longitude para o mapa. Faço isso criando uma lista con valores em graus decimais.
 
 ```{r}
 
@@ -221,7 +221,11 @@ limits <- list(
 ```
 
 
-Agora, vamos começar a contrução do mapa. Eu prefiro criar as visualizações e ir salvando em .png. Assim, já escolho o tamanho da imagem final, e fica mais facil para definir tamanhos de pontos, fontes etc. 
+Agora, vamos começar a contrução do mapa. Eu prefiro criar as visualizações e ir salvando em `.png`. Assim, já escolho o tamanho da imagem final, e fica mais fácil para definir tamanhos de pontos, fontes etc. 
+
+No primeiro passo, vamos definir as camadas com o `geom_sf()`, como já fizemos anteriormente, mas agora definindo algumas opções. Para os poligonos dos países (o objeto `country.sf`), vamos definir a cor de preenchimento com o argumento `fill`, a cor da borda com o argumento `color` e a espessura da borda com o argumento `size`. Já para os pontos (`araucaria.nat`) vamos definir a cor com o `color` e o tamanho com `size`. 
+
+Com a função `scale_*_continuous()` definimos o limite da visualização, e ainda escolhi um tema padrão (`theme_bw()`) que vamos modificar um pouco. O mapa até agora ficou assim:
 
 ```{r}
 
@@ -250,9 +254,7 @@ ggsave("araucaria.png",
 ```
 
 
-No primeiro passo, vamos definir as camadas com o `geom_sf()`, como já fizemos anteriormente, mas agora definindo algumas opções. Para os poligonos dos países (o objeto `country.sf`), vamos definir a cor de preenchimento com o argumento `fill`, a cor da borda com o argumento `color` e a espessura da borda com o argumento `size`. Já para os pontos (`araucaria.nat`) vamos definir a cor com o `color` e o tamanho com `size`. 
 
-Com a função `scale_*_continuos` definimos o limite da visualização, e ainda escolhi um tema padrão (`theme_bw`) que vamos modificar um pouco. O mapa até agora ficou assim:
 
 ```{r, echo=FALSE}
 
@@ -297,7 +299,7 @@ ggsave("araucaria_2.png",
 knitr::include_graphics("araucaria_2.png")
 ```
 
-O mapa está praticamente pronto. Precisamos alterar algumas opções na função `theme()` para chegar ao mapa final. Para alterar a aparencia do título e subtítulo usei as funções `element_text()` e `element_markdown`. Esta ultima é do pacote `{ggtext}` e me permite deixar o nome da espécie em italico utilizando `*` antes e depois do nome. Além disso, a quebra de linha foi alterada de `/n` para `<br>` que e um código em HTML. Para finalizar, alterei a cor do mar no argumento `panel.background`e o fundo da imagem com o argumento `plot.background`.  
+O mapa está praticamente pronto. Precisamos alterar algumas opções na função `theme()` para chegar ao mapa final. Para alterar a aparencia do título e subtítulo usei as funções `element_text()` e `element_markdown()`. Esta última é do pacote `{ggtext}` e me permite deixar o nome da espécie em italico utilizando `*` antes e depois do nome. Além disso, a quebra de linha foi alterada de `/n` para `<br>` que e um código em HTML. Para finalizar, alterei a cor do mar no argumento `panel.background` e o fundo da imagem com o argumento `plot.background`.  
 
 ```{r fig.width=8, fig.height=8}
 
@@ -362,4 +364,5 @@ ggsave("araucaria_final.png",
 knitr::include_graphics("araucaria_final.png")
 ```
 
+Pronto! Temos um mapa dos pontos de ocorrência da araucaria em sua área de distribuição nativa. 
 

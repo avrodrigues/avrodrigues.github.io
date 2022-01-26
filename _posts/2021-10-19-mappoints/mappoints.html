@@ -1509,7 +1509,7 @@ Figure 1: Foto por Bruno Salvani via unsplash
 </div>
 </div>
 <h2 id="pacotes">Carregando os pacotes</h2>
-<p>Primeiro, vou carregar todos os pacotes que serão utilizados ao longo do tutorial. Nos meus scripts, costumo organizar dessa forma: todos os pacotes o ínicio. E enquanto vou escrevendo o código, sempre que preciso de um novo pacote, incluio o carregamento dele no início do script. Assim, quando eu for utilizar o scrit novamente, todos os pacotes serão carregados antes de começar as análises.</p>
+<p>Primeiro, vou carregar todos os pacotes que serão utilizados ao longo do tutorial. Nos meus scripts, costumo organizar dessa forma: todos os pacotes o ínicio. E enquanto vou escrevendo o código, sempre que preciso de um novo pacote, incluio o carregamento dele no início do script. Assim, quando eu for utilizar o script novamente, todos os pacotes serão carregados antes de começar as análises.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># carregar pacotes --------------------</span>
@@ -1524,8 +1524,8 @@ Figure 1: Foto por Bruno Salvani via unsplash
 </div>
 </div>
 <h2 id="baixando-os-dados-de-ocorrência">Baixando os dados de ocorrência</h2>
-<p>Vou baixar todos os registros de ocorrências de araucária da base de dados do <a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a> utilizandoo pacote <code>{rgbif}</code>. Na função <code>occ_search</code>, informei o nome da espécie e o limite de registros que a função deve retornar. Essa função tem como padrão retornar até 500 occorrências (argumento <code>limit = 500</code>). Primeiro utilizei a função informando apenas a espécie. Ela então retorna também , e depois alterei o <code>limit</code> pois a função retorna também quantas ocorrecias estão disponiveis.</p>
-<p>Para o nosso objetivo de praticar a construção de mapas, podemos utilizar apenas os dados baixados com a função <code>occ_search</code>. Caso você deseje baixar dados para alguma publicação oficial, é recomendavel que utilize a função <code>occ_download</code>, que gera um arquivo de download com um identificador DOI (<a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifier</a>).</p>
+<p>Vou baixar todos os registros de ocorrências de araucária da base de dados do <a href="https://www.gbif.org/">Global Biodiversity Information Facility (GBIF)</a> utilizandoo pacote <code>{rgbif}</code>. Na função <code>occ_search()</code>, informei o nome da espécie e o limite de registros que a função deve retornar. Essa função tem como padrão retornar até 500 occorrências (argumento <code>limit = 500</code>). Primeiro utilizei a função informando apenas a espécie. Ela então retorna também , e depois alterei o <code>limit</code> pois a função retorna também quantas ocorrecias estão disponiveis.</p>
+<p>Para o nosso objetivo de praticar a construção de mapas, podemos utilizar apenas os dados baixados com a função <code>occ_search()</code>. Caso você deseje baixar dados para alguma publicação oficial, é recomendavel que utilize a função <code>occ_download()</code>, que gera um arquivo de download com um identificador DOI (<a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifier</a>).</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># baixar ocorrencias ------------</span>
@@ -1538,7 +1538,7 @@ Figure 1: Foto por Bruno Salvani via unsplash
 <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>araucaria.gbif</span><span class='op'>$</span><span class='va'>data</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>[1] 1524</code></pre>
+<pre><code>[1] 1493</code></pre>
 </div>
 <p>Há 1524 ocorrências de araucária no GBIF. Mas nem todas essas ocorrências possuem coordenadas geográficas. Vamos limpar os dados para manter apenas os registros com coordenadas usando a função <code>drop_na()</code> do <code>{dplyr}</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1552,9 +1552,9 @@ Figure 1: Foto por Bruno Salvani via unsplash
 <span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>araucaria</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code>[1] 683</code></pre>
+<pre><code>[1] 670</code></pre>
 </div>
-<p>Restaram 683 ocorrências com coordenadas geográficas. Agora, vamos fazer um mapa bem simples apenas para conferir como estão distribuídas as ocorrências. Aqui, vou utilizar um obejto com os polígonos dos paises do mundo, disponibilizados pelo pacote {<code>rnauralearth</code>}. O objeto chama-se <code>countries110</code>, e é da classe <code>SpatialPolygonsDataFrame</code>. Vou tranformá-lo para classe <code>sf</code> para gerar o mapa com o <code>{ggplot2}</code>. Além disso, vou transformar os dados de ocorrência para classe <code>sf</code> e definir a projeção geográfica igual a do mapa de paises.</p>
+<p>Restaram 683 ocorrências com coordenadas geográficas. Agora, vamos fazer um mapa bem simples apenas para conferir como estão distribuídas as ocorrências. Aqui, vou utilizar um obejto com os polígonos dos paises do mundo, disponibilizados pelo pacote {<code>rnauralearth</code>}. O objeto chama-se <code>countries110</code>, e é da classe <code>SpatialPolygonsDataFrame</code>. Vou tranformá-lo para classe <code>sf</code> para gerar o mapa com o <code>{ggplot2}</code>. Além disso, vou transformar os dados de ocorrência para classe <code>sf</code> e definir a projeção geográfica igual a do mapa de países.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span><span class='op'>(</span><span class='va'>countries110</span><span class='op'>)</span>
@@ -1574,7 +1574,7 @@ attr(,&quot;package&quot;)
 </code></pre>
 </div>
 </div>
-<p>Feitas as transformações dos dados para <code>sf</code>, vamos ver como estão distribuídas as ocorrências num mapa. Utilizo a função <code>geom_sf</code> para plotar cada camada. Primeiro o mapa dos paises e sobre eles as ocorrências de araucária.</p>
+<p>Feitas as transformações dos dados para <code>sf</code>, vamos ver como estão distribuídas as ocorrências num mapa. Utilizo a função <code>geom_sf()</code> para plotar cada camada. Primeiro o mapa dos países e sobre eles as ocorrências de araucária.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>ggplot</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
@@ -1585,9 +1585,9 @@ attr(,&quot;package&quot;)
 <p><img src="mappoints_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
 </div>
 <p>Aí está! Temos um mapa de pontos com registros da araucária em muitas partes do mundo!</p>
-<p>Porém, meu objetivo é mostrar os registro feitos em sua área de ocorrência nativa da araucária. Portanto, será necessário um pouco mais de manipulação de dados para chegarmos ao mapa final.</p>
+<p>Porém, meu objetivo é mostrar os registro feitos na área de ocorrência nativa da araucária. Portanto, será necessário um pouco mais de manipulação de dados para chegarmos ao mapa final.</p>
 <h2 id="filtrando-os-dados-de-ocorrência">Filtrando os dados de ocorrência</h2>
-<p>Vou fazer uma limpeza nos dados e remover todas as ocorrências fora da área de ocorrência natural da araucária. Para me guiar nessa limpeza, vou utilizar informação da area de ocorrecia natural da espécie de duas fontes: o <a href="http://floradobrasil.jbrj.gov.br/jabot/floradobrasil/FB33971">Flora do Brasil</a> e o <a href="http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:17518-2">Plants of the World Online</a>.</p>
+<p>Vou fazer uma limpeza nos dados e remover todas as ocorrências fora da área de ocorrência natural da araucária. Para me guiar nessa limpeza, vou utilizar informação da área de ocorrência natural da espécie de duas fontes: o <a href="http://floradobrasil.jbrj.gov.br/jabot/floradobrasil/FB33971">Flora do Brasil</a> e o <a href="http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:17518-2">Plants of the World Online</a>.</p>
 <p>Com base nas informações desse sites, vou selecionar as ocorrencias no Sudeste e Sul do Brasil e na Região da Missões, na Argentina e Paraguai. Primeiro, vou selecionar as ocorrências no Brasil, Argentina e Uruguai, utilizando a função <code>st_intersection()</code>. Para isso vou criar um novo objeto apenas com os poligonos dos três países, selecionando estes a partir do objeto <code>country.sf</code> que contém todos os países.</p>
 <p>Uma das vantagens de se utilizar o pacote <code>{sf}</code> é que podemos manipular o objeto como se fosse um data frame. E portanto, podemos utilizar as funções do <code>{dplyr}</code> para fazer a filtragem.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1607,7 +1607,7 @@ attr(,&quot;package&quot;)
 </div>
 <p><img src="mappoints_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
 </div>
-<p>Ainda há alguns pontos na Argentina e Brasil que não fazem parte da area nativa da espécie, segundo as fontes que estou utilizando. Ao sul, vou excluir os pontos abaixo da latitude 34ºS, removendo os pontos em Buenos Aires; e ao norte vou excluir os pontos acima da latitude 18ºS, excluindo pontos fora do Sudeste brasileiro.</p>
+<p>Ainda há alguns pontos na Argentina e Brasil que não fazem parte da área nativa da espécie, segundo as fontes que estou utilizando. Ao sul, vou excluir os pontos abaixo da latitude 34ºS, removendo os pontos em Buenos Aires; e ao norte vou excluir os pontos acima da latitude 18ºS, excluindo pontos fora do Sudeste brasileiro.</p>
 <p>Com a função <code>st_bbox()</code>, vou definir os limites geográficos para a seleção, e com a função <code>st_crop()</code> vou manter apenas os pontos que caem dentro desses limites.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -1623,16 +1623,16 @@ attr(,&quot;package&quot;)
 </div>
 <p><img src="mappoints_files/figure-html5/unnamed-chunk-8-1.png" width="624" /></p>
 </div>
-<p>Note que nesses dois passos de seleção utilizei duas estrategias diferentes. Na primeira, como o <code>st_intersection()</code> fiz um aseleção com pase em poligonos espaciais, no caso os mapas dos 3 países selecionados. Na segunda estatégia, defini um retângulo com a função <code>st_bbox()</code> e selecionei os pontos que estavam dentro desta ‘caixa’.</p>
-<p>Agora que temos os dados de ocorrecia baixados e filtrados de acordo com o nosso objetivo, podemos contruir o mapa final.</p>
+<p>Note que nesses dois passos de seleção utilizei duas estratégias diferentes. Na primeira, com o <code>st_intersection()</code> fiz uma seleção a partir de poligonos espaciais, no caso, os mapas dos 3 países selecionados. Na segunda estatégia, defini um retângulo com a função <code>st_bbox()</code> e selecionei os pontos que estavam dentro desta ‘caixa’.</p>
+<p>Agora que temos os dados de ocorrência baixados e filtrados de acordo com o nosso objetivo, podemos construir o mapa final.</p>
 <h2 id="construindo-a-visualização">Construindo a visualização</h2>
-<p>Nós já construímos um mapa com os dados de ocorrência usando a função <code>geom_sf()</code>. Agora a ideia é customizar a aparencia do mapa, usando o <code>{ggplot2}</code>. Além do <code>{ggplot2}</code>, vou usar outros dois pacotes para customizar o título do mapa, o <code>{showtext}</code>, para escolher uma fonte, e o <code>{ggtext}</code>, para deixar o nome da espécie em itálico.</p>
+<p>Nós já fizemos um mapa com os dados de ocorrência usando a função <code>geom_sf()</code>. Agora a ideia é customizar a aparência do mapa, usando o <code>{ggplot2}</code>. Além do <code>{ggplot2}</code>, vou usar outros dois pacotes para customizar o título do mapa, o <code>{showtext}</code>, para escolher uma fonte, e o <code>{ggtext}</code>, para deixar o nome da espécie em itálico.</p>
 <p>O mapa que vamos construir vai ficar assim:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="araucaria_final.png" width="900" data-distill-preview=1 /></p>
 </div>
 <p>Mas vamos por partes.</p>
-<p>Primeiro, eu vou definir uma paleta de cores para utilizar no mapa. Para isso crei um objeto de classe <code>list</code> onde específico as cores, dando um nome e atribuindo o código de cor. Eu costumo utilizar o site <a href="https://www.color-hex.com/">color-hex.com</a> para escolher as cores. Geralmente, escolher as cores leva um tempo, pois vou testando no mapa (ou gráfico) e vendo o que acho legal ou não.</p>
+<p>Primeiro, eu vou definir uma paleta de cores para utilizar no mapa. Para isso crei um objeto de classe <code>list</code> onde específico as cores, dando um nome e atribuindo o código de cor. Eu costumo utilizar o site <a href="https://www.color-hex.com/">color-hex.com</a> para escolher as cores. Geralmente, escolher as cores leva um tempo, pois vou testando no mapa (ou gráfico) e vendo o que acho legal.</p>
 <p>Outra coisa que depende de tentativa e erro até gostar do resultado é a escolha da fonte. Neste mapa, eu vou utilizar fontes do <a href="https://fonts.google.com/">Google Fonts</a>, carregadas via <code>{showtext}</code> pois permitem apresentar um código reproduzivel. Em visualizações onde a reprodutibilidade não é essencial, eu prefiro baixar as fontes para o meu computador e utilizar com o pacote <a href="https://github.com/r-lib/ragg"><code>{ragg}</code></a>. Outra opção para buscar por fontes é o site <a href="https://www.dafont.com/">DaFont</a>.</p>
 <p>Então vamos começar definindo essas opções estéticas de cor e fonte.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1662,7 +1662,7 @@ attr(,&quot;package&quot;)
 </code></pre>
 </div>
 </div>
-<p>Outra coisa que vamos fazer de ínicio é definir os limites de latitude e longitude para o mapa. Faço isso criando uma lista con valores em graus decimais.</p>
+<p>Vamos definir os limites de latitude e longitude para o mapa. Faço isso criando uma lista con valores em graus decimais.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>limits</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
@@ -1672,7 +1672,9 @@ attr(,&quot;package&quot;)
 </code></pre>
 </div>
 </div>
-<p>Agora, vamos começar a contrução do mapa. Eu prefiro criar as visualizações e ir salvando em .png. Assim, já escolho o tamanho da imagem final, e fica mais facil para definir tamanhos de pontos, fontes etc.</p>
+<p>Agora, vamos começar a contrução do mapa. Eu prefiro criar as visualizações e ir salvando em <code>.png</code>. Assim, já escolho o tamanho da imagem final, e fica mais fácil para definir tamanhos de pontos, fontes etc.</p>
+<p>No primeiro passo, vamos definir as camadas com o <code>geom_sf()</code>, como já fizemos anteriormente, mas agora definindo algumas opções. Para os poligonos dos países (o objeto <code>country.sf</code>), vamos definir a cor de preenchimento com o argumento <code>fill</code>, a cor da borda com o argumento <code>color</code> e a espessura da borda com o argumento <code>size</code>. Já para os pontos (<code>araucaria.nat</code>) vamos definir a cor com o <code>color</code> e o tamanho com <code>size</code>.</p>
+<p>Com a função <code>scale_*_continuous()</code> definimos o limite da visualização, e ainda escolhi um tema padrão (<code>theme_bw()</code>) que vamos modificar um pouco. O mapa até agora ficou assim:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>map.arauc</span> <span class='op'>&lt;-</span> 
@@ -1700,8 +1702,6 @@ attr(,&quot;package&quot;)
 </code></pre>
 </div>
 </div>
-<p>No primeiro passo, vamos definir as camadas com o <code>geom_sf()</code>, como já fizemos anteriormente, mas agora definindo algumas opções. Para os poligonos dos países (o objeto <code>country.sf</code>), vamos definir a cor de preenchimento com o argumento <code>fill</code>, a cor da borda com o argumento <code>color</code> e a espessura da borda com o argumento <code>size</code>. Já para os pontos (<code>araucaria.nat</code>) vamos definir a cor com o <code>color</code> e o tamanho com <code>size</code>.</p>
-<p>Com a função <code>scale_*_continuos</code> definimos o limite da visualização, e ainda escolhi um tema padrão (<code>theme_bw</code>) que vamos modificar um pouco. O mapa até agora ficou assim:</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="araucaria.png" width="900" /></p>
 </div>
@@ -1740,7 +1740,7 @@ attr(,&quot;package&quot;)
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="araucaria_2.png" width="900" /></p>
 </div>
-<p>O mapa está praticamente pronto. Precisamos alterar algumas opções na função <code>theme()</code> para chegar ao mapa final. Para alterar a aparencia do título e subtítulo usei as funções <code>element_text()</code> e <code>element_markdown</code>. Esta ultima é do pacote <code>{ggtext}</code> e me permite deixar o nome da espécie em italico utilizando <code>*</code> antes e depois do nome. Além disso, a quebra de linha foi alterada de <code>/n</code> para <code>&lt;br&gt;</code> que e um código em HTML. Para finalizar, alterei a cor do mar no argumento <code>panel.background</code>e o fundo da imagem com o argumento <code>plot.background</code>.</p>
+<p>O mapa está praticamente pronto. Precisamos alterar algumas opções na função <code>theme()</code> para chegar ao mapa final. Para alterar a aparencia do título e subtítulo usei as funções <code>element_text()</code> e <code>element_markdown()</code>. Esta última é do pacote <code>{ggtext}</code> e me permite deixar o nome da espécie em italico utilizando <code>*</code> antes e depois do nome. Além disso, a quebra de linha foi alterada de <code>/n</code> para <code>&lt;br&gt;</code> que e um código em HTML. Para finalizar, alterei a cor do mar no argumento <code>panel.background</code> e o fundo da imagem com o argumento <code>plot.background</code>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>map.arauc</span> <span class='op'>&lt;-</span> 
@@ -1795,6 +1795,7 @@ attr(,&quot;package&quot;)
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="araucaria_final.png" width="900" /></p>
 </div>
+<p>Pronto! Temos um mapa dos pontos de ocorrência da araucaria em sua área de distribuição nativa.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

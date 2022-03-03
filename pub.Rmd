@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-decription: Here you find my scientifc publications
+decription: Here you find my scientific publications
 ---
 
 ```{r setup, include=FALSE}

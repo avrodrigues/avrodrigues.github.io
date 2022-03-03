@@ -38,13 +38,13 @@ tibble(
     # url_youtube = character()
   ) %>% 
   add_row(
-    status = "Under review",
+    status = "Published",
     type_of_publication = "Article",
     year = 2022,
     title = "A test of the fast-slow plant economy hypothesis in a subtropical rain forest.",
     authors = "Rodrigues. A.V; Pastório, F.F; Bones, F.L.V; Esquivel-Muelbert, A; Vibrans, A.C; Gasper, A.L de.",
     item_info = "Plant Ecology & Diversity.",
-    # url_text = character(),
+    url_text = "https://doi.org/10.1080/17550874.2022.2039313",
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()

@@ -7,8 +7,8 @@ decription: Here you find my scientific publications
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Links:** [Lattes](http://lattes.cnpq.br/7572293065197704) |
-[Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&view_op=list_works&gmla=AJsN-F7Jy2R3XorfVDOiGwdKosgS4Mju8ccGdpcNH3SK6pWP8pKRM_L82oo1aBr8xvt6i35y9PFxuDFZH5gLMSPirIR11-TpZxT3XURwoqSguPNu-7Z9cXWUL-0qKa_EaTXaRblE3z1r&user=jsHj1g8AAAAJ) | [ORCID](https://orcid.org/0000-0003-2656-558X)
+**Links:** 
+[Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&view_op=list_works&gmla=AJsN-F7Jy2R3XorfVDOiGwdKosgS4Mju8ccGdpcNH3SK6pWP8pKRM_L82oo1aBr8xvt6i35y9PFxuDFZH5gLMSPirIR11-TpZxT3XURwoqSguPNu-7Z9cXWUL-0qKa_EaTXaRblE3z1r&user=jsHj1g8AAAAJ) | [ORCID](https://orcid.org/0000-0003-2656-558X) | [Currículo Lattes](http://lattes.cnpq.br/7572293065197704)
 
 
 

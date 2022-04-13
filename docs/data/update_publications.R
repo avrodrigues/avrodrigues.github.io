@@ -26,13 +26,13 @@ tibble(
     # url_youtube = character()
   ) %>% 
   add_row(
-    status = "Under review",
+    status = "Published",
     type_of_publication = "Article",
     year = 2022,
-    title = "naturaList: a package to classify occurrence records in levels of confidence in species identification.",
+    title = "Species misidentification affects biodiversity metrics: Dealing with this issue using the new R package naturaList.",
     authors = "Rodrigues, A.V; Nakamura, G; Staggemeier, V.G; Duarte, L.",
     item_info = "Ecological Informatics.",
-    # url_text = ""
+    url_text = "https://doi.org/10.1016/j.ecoinf.2022.101625"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()

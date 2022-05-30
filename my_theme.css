@@ -23,7 +23,7 @@
 html {
   /*-- Main font sizes --*/
   --title-size:      42px;
-  --body-size:       1.06rem;
+  --body-size:       1rem;
   --code-size:       12px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
@@ -43,6 +43,12 @@ html {
 
 body {
   background-color: #FAF8F4;
+}
+
+d-article li {
+  margin-bottom: 0.01em;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*-- ARTICLE METADATA --*/

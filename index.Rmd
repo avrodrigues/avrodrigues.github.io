@@ -1,7 +1,7 @@
 ---
 title: "Arthur V. Rodrigues"
 site: distill::distill_website
-description: 'Community Ecology, Macroecology and Macroevolution'
+description: 'Community Ecology · Macroecology · Biogeography'
 ---
 
 ```{r, layout="l-screen-inset", fig.cap="Atlantic Forest landscape in southern Brazil", echo=FALSE}
@@ -22,7 +22,7 @@ df.img <- data.frame(x = 1, y = 1, img = "img/ID.JPG")
 
 ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 1.6) +
   theme_void() +
-  theme(panel.background = element_rect(fill = "#F8F7EC66", color = "#F8F7EC66"))
+  theme(panel.background = element_rect(fill = "#FAF8F4", color = "#FAF8F4"))
 ```
 
 </aside>

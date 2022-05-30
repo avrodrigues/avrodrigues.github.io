@@ -26,6 +26,18 @@ tibble(
     # url_youtube = character()
   ) %>% 
   add_row(
+    status = "In preparation",
+    type_of_publication = "Article",
+    year = 2022,
+    title = "Spatial distribution of the Greater Rhea (Rhea americana, Rheiformes, Rheidae) in Rio Grande do Sul, southern Brazil: citizen-science data, probabilistic mapping, and comparison with expert knowledge.",
+    authors = "Luza, A.L; Rodrigues, A.V; Mammalis, L; Zulian, V.",
+    # item_info = character(),
+    # url_text = character(),
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
     status = "Published",
     type_of_publication = "Article",
     year = 2022,

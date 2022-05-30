@@ -30,45 +30,37 @@ ggplot(df.img, aes(x = x, y = y )) + geom_image(aes(image=img), size=0.6, asp = 
 
 </aside>
 
-<p style=" font-size:10pt">
+<p style="font-size:10pt">
 
-[Jump to english version](#en)
+[*Jump to english version*](#en)
 
 </p>
 
-eu sou Arthur, doutorando em [Ecologia](https://www.ufrgs.br/leff/) pela Universidade Federal do Rio Grande do Sul. Tenho interesse em entender fatores e processos que determinam e mantêm os padrões de biodiversidade, desde a escala regional à escala continental. Atualmente, investigo como a história evolutiva família Myrtaceae no Neotópico influencia sua diversidade na Mata Atlântica.
+Eu sou Arthur, [doutorando em Ecologia](https://www.ufrgs.br/leff/) pela Universidade Federal do Rio Grande do Sul. De maneira ampla, meu interesse em ecologia é entender fatores e processos que determinam e mantêm os padrões de biodiversidade, desde a escala regional à escala continental. Atualmente, investigo como a história evolutiva família Myrtaceae no Neotrópico influencia sua diversidade na Mata Atlântica.
 
-Tenho realizado [pesquisas](https://avrodrigues.github.io/pub.html) e tenho interesse em avançar nos seguintes temas:
+Faço [pesquisas](https://avrodrigues.github.io/pub.html) e tenho interesse nos seguintes temas:
 
 -   Modelos de distribuição de espécies;
-
--   Predição de cenários futuros para biodiversidade ;
-
+-   Predição de cenários futuros para biodiversidade;
 -   Influência da história evolutiva e da biogeografia em padrões de biodiversidade e processos de montagem de comunidades;
-
 -   Estratégias ecológicas das espécies (atributos funcionais) e sua relação com processos de montagem de comunidades;
+-   Influência de fatores antropogênicos sobre a biodiversidade.
 
--   Influência de fatores antropogênicos em biodiversidade.
-
-Além disso, tenho grande interesse em programação com a linguagem R. Uso o R para fins diversos, desde análises de dados, criação de páginas de web (como essa aqui), [web app com {shiny}](https://avrodrigues.github.io/shiny.html), mapas e [visualização de dados com {ggplot2}](https://avrodrigues.github.io/tidy_tuesday.html) e sou mantenedor do pacote [{naturaList}](https://avrodrigues.github.io/naturaList/) disponível na CRAN.
+Além disso, tenho grande interesse em programação com a linguagem R. Uso o R para fins diversos, como análises de dados, criação de páginas de web (como essa aqui), [web app com {shiny}](https://avrodrigues.github.io/shiny.html), mapas e [visualização de dados com {ggplot2}](https://avrodrigues.github.io/tidy_tuesday.html) e sou mantenedor do pacote [{naturaList}](https://avrodrigues.github.io/naturaList/) disponível na CRAN.
 
 Temos interesses em comum? Acha que eu posso te ajudar de alguma forma? Entre em contato comigo: [rodrigues.arthur.v\@gmail.com](mailto:rodrigues.arthur.v@gmail.com){.email}
 
 ## Hello {#en}
 
-I am Arthur, a [PhD candidate in Ecology](https://www.ufrgs.br/leff/) at the Federal University of Rio Grande do Sul, Brazil. My main research interest is to undertanding factors and processes that drive and maintain biodiversity patterns, from regional to contiental scale. Currently, I investigate how the evolutionary history of Myrtaceae species in the Neotropícs influence its diversity in the Brazilian Atlantic Forest.
+I'm Arthur, a [PhD candidate in Ecology](https://www.ufrgs.br/leff/) at the Federal University of Rio Grande do Sul, Brazil. In a broad view, my interest in ecology is to understand factors and processes that drive and maintain biodiversity patterns, from regional to contiental scale. Currently, I investigate how the evolutionary history of Myrtaceae species in the Neotropics influence its diversity in the Brazilian Atlantic Forest.
 
-I have made [research](https://avrodrigues.github.io/pub.html) and have interest to advance in the following areas:
+I have made [research](https://avrodrigues.github.io/pub.html) and have interest in the following areas:
 
 -   Species distribution modeling; 
-
 -   Predicting future scenarios for biodiversity; 
-
 -   How evolutionary history and biogeography influence biodiversity patterns and the metacommunity assembly processes; 
-
 -   Ecological strategy of species (functional traits) and its relashionship with community assembly;
-
--   Anthropogenic factors influencing biodiveristy.
+-   Anthropogenic factors influence on biodiveristy.
 
 Beside that, I have great interest in programming using R language. I have used R for several ends, such as data analysis, creating web pages (like this one), [web apps using {shiny}](https://avrodrigues.github.io/shiny.html), maps and [data visualization using {ggplot2}](https://avrodrigues.github.io/tidy_tuesday.html), and I am maintainer of the [{naturaList}](https://avrodrigues.github.io/naturaList/) package available at CRAN. 
 

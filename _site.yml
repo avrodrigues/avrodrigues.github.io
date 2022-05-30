@@ -17,8 +17,6 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Blog"
-      href: blog.html
     - text: "Data Visualization"
       menu:
         - text: "TidyTuesday"

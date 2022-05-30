@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -2474,7 +2475,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="blog.html">Blog</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 Data Visualization
@@ -2505,7 +2505,8 @@ Data Visualization
 <h1>Shiny apps</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Here I show some shiny apps I have developed. Click in the title to see the app.</p>
+<p>Here I show some shiny apps I have developed. Click in the title to
+see the app.</p>
 </div>
 
 
@@ -2514,29 +2515,63 @@ Data Visualization
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#tree-ferns-distribution-and-diversity"><span>Tree Ferns distribution and diversity</span></a></li>
+<li><a href="#tree-ferns-distribution-and-diversity"><span>Tree Ferns
+distribution and diversity</span></a></li>
 <li><a href="#naturalist"><span>naturaList</span></a></li>
-<li><a href="#plant-traits-dataset"><span>Plant Traits Dataset</span></a></li>
+<li><a href="#plant-traits-dataset"><span>Plant Traits
+Dataset</span></a></li>
 </ul>
 </nav>
 </div>
-<h2 id="tree-ferns-distribution-and-diversity"><a href="https://avrodrigues.shinyapps.io/tferns/">Tree Ferns distribution and diversity</a></h2>
-<p><img src="img/tree_ferns.png" /> This app is part of the paper <a href="https://doi.org/10.1016/j.pecon.2021.03.007">Expected impacts of climate change on tree ferns distribution and diversity patterns in subtropical Atlantic Forest</a>.</p>
-<p>In this paper, we show predictions of change in the distribution and diversity of tree ferns in the subtropical Atlantic Forest due to climate change.</p>
-<p>In the app, you can see the predictions to the distribution of each species (13) and to the diversity in 2050.</p>
-<h2 id="naturalist"><a href="https://avrodrigues.shinyapps.io/naturaList/">naturaList</a></h2>
+<h2 id="tree-ferns-distribution-and-diversity"><a
+href="https://avrodrigues.shinyapps.io/tferns/">Tree Ferns distribution
+and diversity</a></h2>
+<p><img src="img/tree_ferns.png" /> This app is part of the paper <a
+href="https://doi.org/10.1016/j.pecon.2021.03.007">Expected impacts of
+climate change on tree ferns distribution and diversity patterns in
+subtropical Atlantic Forest</a>.</p>
+<p>In this paper, we show predictions of change in the distribution and
+diversity of tree ferns in the subtropical Atlantic Forest due to
+climate change.</p>
+<p>In the app, you can see the predictions to the distribution of each
+species (13) and to the diversity in 2050.</p>
+<h2 id="naturalist"><a
+href="https://avrodrigues.shinyapps.io/naturaList/">naturaList</a></h2>
 <p><img src="img/naturalist.png" /></p>
-<p>This app was made for the <a href="https://www.gbif.org/pt/news/2mixX9oDrJI2W3AqPFOxI3/wherenext-wins-2019-gbif-ebbe-nielsen-challenge">2019 GBIF Ebbe Nielsen Challenge</a> and win the 3rd Prize in this challenge.</p>
-<p>naturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.</p>
-<p>Based on this work, an R package is in development to provide more flexibility on the classification and cleaning of datasets in R.</p>
-<h2 id="plant-traits-dataset"><a href="https://avrodrigues.shinyapps.io/AF_plant_trait_dataset/">Plant Traits Dataset</a></h2>
+<p>This app was made for the <a
+href="https://www.gbif.org/pt/news/2mixX9oDrJI2W3AqPFOxI3/wherenext-wins-2019-gbif-ebbe-nielsen-challenge">2019
+GBIF Ebbe Nielsen Challenge</a> and win the 3rd Prize in this
+challenge.</p>
+<p>naturaList app provides tools aiming at classify occurrence records
+based on the confidence in the species identification. To conduct the
+classification, the user should have an occurrence dataset downloaded
+from GBIF, and a list of expert taxonomist in the taxon of interest. The
+app provides full guideline to conduct the classification and
+filtering.</p>
+<p>Based on this work, an R package is in development to provide more
+flexibility on the classification and cleaning of datasets in R.</p>
+<h2 id="plant-traits-dataset"><a
+href="https://avrodrigues.shinyapps.io/AF_plant_trait_dataset/">Plant
+Traits Dataset</a></h2>
 <p><img src="img/plant_trait.png" /></p>
-<p>This is, for shure, the challenger and the hardest app I have made. Unfortunately, it is unfinished and only in Portuguese.</p>
-<p>In this app, my objective was to share the images of wood branches and stomata I shoted for my master thesis project.</p>
-<p>My master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.</p>
-<p>In the app you can view images of the bracnhes, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, which enables to see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.</p>
-<p>You can access the paper and the dataset, which include the images showed in the app, in this <a href="https://doi.org/10.3390/data3020016">link</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>This is, for shure, the challenger and the hardest app I have made.
+Unfortunately, it is unfinished and only in Portuguese.</p>
+<p>In this app, my objective was to share the images of wood branches
+and stomata I shoted for my master thesis project.</p>
+<p>My master thesis was focused in the investigation of plant trait
+variation in the Atlantic Forest. For that, I collected more that 500
+plant individuals, and measure several traits. Some of them were derived
+from images took from branches and leaves.</p>
+<p>In the app you can view images of the bracnhes, from panoramic view,
+which enables to contrast area used for wood, bark and pith; and a
+zoomed view, which enables to see the vessels and other wood elementes
+in more details. In addition, you can see stomata in the upper side of
+the leaf from several species.</p>
+<p>You can access the paper and the dataset, which include the images
+showed in the app, in this <a
+href="https://doi.org/10.3390/data3020016">link</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

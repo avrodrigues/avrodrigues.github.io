@@ -60,7 +60,7 @@ I have made [research](https://avrodrigues.github.io/pub.html) and have interest
 -   Predicting future scenarios for biodiversity; 
 -   How evolutionary history and biogeography influence biodiversity patterns and the metacommunity assembly processes; 
 -   Ecological strategy of species (functional traits) and its relationship with community assembly;
--   Anthropogenic factors influence on biodiversity.
+-   How anthropogenic factors have influenced biodiversity.
 
 Beside that, I have great interest in programming using R language. I have used R for several ends, such as data analysis, creating web pages (like this one), [web apps using {shiny}](https://avrodrigues.github.io/shiny.html), maps and [data visualization using {ggplot2}](https://avrodrigues.github.io/tidy_tuesday.html), and I am maintainer of the [{naturaList}](https://avrodrigues.github.io/naturaList/) package available at CRAN. 
 

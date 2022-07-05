@@ -14,6 +14,7 @@ collections:
     share: [twitter, linkedin, pinterest, facebook]  
 
 navbar:
+  search: false
   right:
     - text: "Home"
       href: index.html

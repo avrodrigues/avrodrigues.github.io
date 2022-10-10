@@ -17,8 +17,20 @@ tibble(
     status = "In preparation",
     type_of_publication = "Article",
     year = 2022,
-    title = "Diversification and lineage dispersal affect Myrcia diversity in the Atlantic Forest.",
-    authors = "Rodrigues. A.V; Nakamura G.; Vasconcelos, T; Duarte, L.",
+    title = "Mapping species diversity and the evolutionary arenas of the genus Myrcia.",
+    authors = "Rodrigues. A.V; Duarte, L.",
+    # item_info = character(),
+    # url_text = character(),
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
+    status = "In preparation",
+    type_of_publication = "Article",
+    year = 2022,
+    title = "Imprints of the biogeographical history of Myrcia in its current diversity in the Neotropical region.",
+    authors = "Rodrigues. A.V; Nakamura G.; Duarte, L.",
     # item_info = character(),
     # url_text = character(),
     # url_code = character(),
@@ -38,13 +50,13 @@ tibble(
     # url_youtube = character()
   ) %>% 
   add_row(
-    status = "In preparation",
-    type_of_publication = "Article",
+    status = "Published",
+    type_of_publication = "Preprint",
     year = 2022,
-    title = "Herodotools: An R package to integrate Macroevolution, Community Ecology and Biogeography",
-    authors = "Nakamura, G; Luza, A.L; Rodrigues, A.V; Maestri, R; Debastiani, V; Duarte, L.",
-    # item_info = character(),
-    # url_text = character(),
+    title = "Herodotools: An R package to integrate macroevolution, community ecology and biogeography",
+    authors = "Nakamura, G; Rodrigues, A.V; Luza, A.L; Maestri, R; Debastiani, V; Duarte, L.",
+    item_info = "EcoEvoRxiv",
+    url_text = "https://doi.org/10.32942/osf.io/2f6uk"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()

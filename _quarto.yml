@@ -35,6 +35,10 @@ format:
     css: styles.css
     toc: false
     mainfont: 'Source Sans Pro'
+    fontcolor: "#4E4133"
+    backgroundcolor: "#FAF8F4"
+    
+    
 
 execute:
   freeze: auto

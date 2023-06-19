@@ -1,0 +1,14 @@
+{
+  "hash": "68352d7db7d211720caf10da50df6cf4",
+  "result": {
+    "markdown": "---\ntitle: \"TidyTuesday\"\ndescription: Here you find some selected data visualization I have made for [#TidyTuesday](https://github.com/rfordatascience/tidytuesday). All submissions can be found in my [github](https://github.com/avrodrigues/Tidy_tuesday/) repository.\noutput:\n  distill::distill_article:\n    toc: true\n    toc-depth: 3\n---\n\n## 2021\n\n### Week 16\n#### Netflix movies and TV shows\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week17)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week17/netflix.png)\n\n\n### Week 14\n#### Bias in the makeup shades\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week14)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week14/makeup.png)\n\n### Week 08\n#### Du Bois Challenge\nThe challenge was to recreate a visualization made by W.E.B Du Bois\n\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week08)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week08/dubois.png)\n\n### Week 04\n#### Kenya census \n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2021/week04)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2021/week04/kenya_crops.png)\n\n## 2020\n### Week 52\n#### The Big Mac Index\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week52)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week52/bigmac_index.gif)\n\n### Week 50 \n#### BBC's 100 women of 2020\n\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week50)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week50/latin_women.png)\n\n### Week 48 \n#### Washington Hike\n\n[Code](https://github.com/avrodrigues/Tidy_tuesday/tree/main/2020/week48)\n\n![](https://raw.githubusercontent.com/avrodrigues/Tidy_tuesday/main/2020/week48/Chart_v2.png)\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

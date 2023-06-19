@@ -1,0 +1,9 @@
+---
+title: "R packages"
+format: html
+editor: source
+---
+
+[![](https://raw.githubusercontent.com/avrodrigues/naturaList/master/man/figures/logo_naturaList_2.png){fig-align="left" width="100"}](https://avrodrigues.github.io/naturaList/) **naturaList** Classify occurrences by confidence levels in the species identification
+
+[![https://gabrielnakamura.github.io/Herodotools/](https://raw.githubusercontent.com/GabrielNakamura/Herodotools/main/man/figures/logo_herodotools.png){fig-align="left" width="100"}](https://gabrielnakamura.github.io/Herodotools/) **Herodotools** Tools for Historical Biogeography analysis

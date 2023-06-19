@@ -14,6 +14,18 @@ tibble(
   url_youtube = character()
 ) %>% 
   add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2023,
+    title = "Herodotools: An R package to integrate macroevolution, community ecology and biogeography",
+    authors = "Nakamura, G; Rodrigues, A.V; Luza, A.L; Maestri, R; Debastiani, V; Duarte, L.",
+    item_info = "Journal of Biogeography",
+    url_text = "https://doi.org/10.1111/jbi.14610"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>%
+  add_row(
     status = "In preparation",
     type_of_publication = "Article",
     year = 2022,

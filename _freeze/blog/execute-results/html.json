@@ -1,0 +1,14 @@
+{
+  "hash": "d506036421b3f90a4de5f61181348351",
+  "result": {
+    "markdown": "---\ntitle: \"Blog\"\nlisting: posts\n---\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

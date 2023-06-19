@@ -1,0 +1,12 @@
+{
+  "listing": "/blog.html",
+  "items": [
+    "/index.html",
+    "/dataviz.html",
+    "/pub.html",
+    "/r_packages.html",
+    "/shiny.html",
+    "/shiny.html",
+    "/tidy_tuesday.html"
+  ]
+}

@@ -1,0 +1,58 @@
+---
+title: "Publications"
+format: html
+editor: source
+---
+
+**Links:** [Google Scholar](https://scholar.google.com.br/citations?hl=pt-BR&view_op=list_works&gmla=AJsN-F7Jy2R3XorfVDOiGwdKosgS4Mju8ccGdpcNH3SK6pWP8pKRM_L82oo1aBr8xvt6i35y9PFxuDFZH5gLMSPirIR11-TpZxT3XURwoqSguPNu-7Z9cXWUL-0qKa_EaTXaRblE3z1r&user=jsHj1g8AAAAJ) \| [ORCID](https://orcid.org/0000-0003-2656-558X) \| [Currículo Lattes](http://lattes.cnpq.br/7572293065197704)
+
+```{r}
+#| results: asis
+#| message: false
+#| warning: false
+#| echo: false
+
+
+library(htmltools)
+library(dplyr)
+
+pub.data <- read.csv("data/academic_dataset.csv") %>% 
+  filter(status == "Published")
+
+
+years <- unique(pub.data$year) %>% sort(decreasing = T)
+
+for(k in years){
+  cat(paste0(h2(k)))
+  
+  pub.in <- pub.data %>% 
+    filter(year == k) %>% 
+    arrange(type_of_publication)
+  
+  for(type in unique(pub.in$type_of_publication)){
+    cat(paste0(h4(type)))
+    
+    pub.k <- pub.in %>% filter(type_of_publication == type)
+    
+     for(i in 1:nrow(pub.k)){
+       cat(paste0(
+         div(
+          pub.k$authors[i], 
+          paste0("(", pub.k$year[i], ") "),
+          tags$b(pub.k$title[i]),
+          tags$i(pub.k$item_info[i]), 
+          tags$a(href = pub.k$url_text[i], pub.k$url_text[i])
+           )
+         )
+       )
+     }
+  }
+  
+  cat(paste0(br(), br()))
+  }
+
+
+
+
+
+```

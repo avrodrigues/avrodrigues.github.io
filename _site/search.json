@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "shiny.html",
+    "href": "shiny.html",
+    "title": "Shiny apps",
+    "section": "",
+    "text": "English\n Português"
+  },
+  {
+    "objectID": "shiny.html#tree-ferns-distribution-and-diversity",
+    "href": "shiny.html#tree-ferns-distribution-and-diversity",
+    "title": "Shiny apps",
+    "section": "Tree Ferns distribution and diversity",
+    "text": "Tree Ferns distribution and diversity\n This app is part of the paper Expected impacts of climate change on tree ferns distribution and diversity patterns in subtropical Atlantic Forest.\nIn this paper, we show predictions of change in the distribution and diversity of tree ferns in the subtropical Atlantic Forest due to climate change.\nIn the app, you can see the predictions to the distribution of each species (13) and to the diversity in 2050."
+  },
+  {
+    "objectID": "shiny.html#naturalist",
+    "href": "shiny.html#naturalist",
+    "title": "Shiny apps",
+    "section": "naturaList",
+    "text": "naturaList\n\nThis app was made for the 2019 GBIF Ebbe Nielsen Challenge and win the 3rd Prize in this challenge.\nnaturaList app provides tools aiming at classify occurrence records based on the confidence in the species identification. To conduct the classification, the user should have an occurrence dataset downloaded from GBIF, and a list of expert taxonomist in the taxon of interest. The app provides full guideline to conduct the classification and filtering.\nBased on this work, an R package was developed to provide more flexibility on the classification and cleaning of datasets in R. The {naturaList} package is available from CRAN. You can get started here."
+  },
+  {
+    "objectID": "shiny.html#plant-traits-dataset",
+    "href": "shiny.html#plant-traits-dataset",
+    "title": "Shiny apps",
+    "section": "Plant Traits Dataset",
+    "text": "Plant Traits Dataset\n\nIn this app (available only in Portuguese), my objective was to share the images of wood branches and stomata I shoted for my master thesis project.\nMy master thesis was focused in the investigation of plant trait variation in the Atlantic Forest. For that, I collected more that 500 plant individuals, and measure several traits. Some of them were derived from images took from branches and leaves.\nIn the app you can view images of the branches, from panoramic view, which enables to contrast area used for wood, bark and pith; and a zoomed view, you can see the vessels and other wood elementes in more details. In addition, you can see stomata in the upper side of the leaf from several species.\nYou can access the paper and the dataset, which include the images showed in the app, in this link."
+  },
+  {
+    "objectID": "r_packages.html",
+    "href": "r_packages.html",
+    "title": "R packages",
+    "section": "",
+    "text": "naturaList Classify occurrences by confidence levels in the species identification\n Herodotools Tools for Historical Biogeography analysis"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arthur V. Rodrigues",
+    "section": "",
+    "text": "I’m Arthur, a PhD candidate in Ecology at the Federal University of Rio Grande do Sul, Brazil. In a broad view, my interest in ecology is to understand factors and processes that drive and maintain biodiversity patterns, from regional to contiental scale. Currently, I investigate how the evolutionary history of Myrtaceae species in the Neotropics influence its diversity in the Brazilian Atlantic Forest.\nI have made research and have interest in the following areas:\n\nSpecies distribution modeling;\nPredicting future scenarios for biodiversity;\nHow evolutionary history and biogeography influence biodiversity patterns and the metacommunity assembly processes;\nEcological strategy of species (functional traits) and its relationship with community assembly;\nHow anthropogenic factors have influenced biodiversity.\n\nBeside that, I have great interest in programming using R language. I have used R for several ends, such as data analysis, creating web pages (like this one), web apps using {shiny}, maps and data visualization using {ggplot2}, and I am maintainer of the {naturaList} package available at CRAN."
+  },
+  {
+    "objectID": "index.html#hello",
+    "href": "index.html#hello",
+    "title": "Arthur V. Rodrigues",
+    "section": "Hello!",
+    "text": "Hello!\nI’m Arthur Rodrigues, an Ecologist Researcher interested in understanding factors and processes that drive and maintain biodiversity patterns, from local to broad scales. Because of that, I have interests in the fields of community ecology, functional ecology, evolutionary macroecology, and biogeography.\nSome of my research interest includes:\n\nHow evolutionary history and biogeography influence current biodiversity patterns;\nEcological strategy of species (functional traits) and its relationship with community assembly;\nHow anthropogenic factors, such as climate change and land-use, affects biodiversity patterns and community structure;\nSpecies distribution modeling;\nPredicting future scenarios for biodiversity.\n\nBeside that, I have great interest in programming using R language. I have used R for several ends, such as data analysis, creating web pages (like this one), web apps using {shiny}, maps and data visualization using {ggplot2}, as well as creating R packages, for example the {naturaList} package.\nCurrently I am a Postoctoral Researcher at the Reseach Centre for Ecological Change, University of Helsiki.\nContact: rodrigues.arthur.v[at]gmail.com"
+  },
+  {
+    "objectID": "pub.html",
+    "href": "pub.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Links: Google Scholar | ORCID | Currículo Lattes\n\n2023\n\n\nArticle\n\n\nNakamura, G; Rodrigues, A.V; Luza, A.L; Maestri, R; Debastiani, V; Duarte, L. (2023) Herodotools: An R package to integrate macroevolution, community ecology and biogeography Journal of Biogeography https://doi.org/10.1111/jbi.14610\n\n\n\n2022\n\n\nArticle\n\n\nRodrigues, A.V; Nakamura, G; Staggemeier, V.G; Duarte, L. (2022) Species misidentification affects biodiversity metrics: Dealing with this issue using the new R package naturaList. Ecological Informatics. https://doi.org/10.1016/j.ecoinf.2022.101625\n\n\nRodrigues. A.V; Pastório, F.F; Bones, F.L.V; Esquivel-Muelbert, A; Vibrans, A.C; Gasper, A.L de. (2022) A test of the fast-slow plant economy hypothesis in a subtropical rain forest. Plant Ecology & Diversity. https://doi.org/10.1080/17550874.2022.2039313\n\n\nPreprint\n\n\nNakamura, G; Rodrigues, A.V; Luza, A.L; Maestri, R; Debastiani, V; Duarte, L. (2022) Herodotools: An R package to integrate macroevolution, community ecology and biogeography EcoEvoRxiv https://doi.org/10.32942/osf.io/2f6uk\n\n\n\n2021\n\n\nArticle\n\n\nDijk, A.V; Nakamura, G; Rodrigues, A.V; Maestri, R; Duarte, L. (2021) Imprints of tropical niche conservatism and historical dispersal in the radiation of Tyrannidae (Aves: Passeriformes). Biological Journal of the Linnean Society. https://doi.org/10.1093/biolinnean/blab079\n\n\nGasper, A.L de; Grittz, S.L, Russi, C.H; Schwartz, C.E; Rodrigues, A.V. (2021) Expected impacts of climate change on tree ferns distribution and diversity patterns in subtropical Atlantic Forest. Perspectives in Ecology and Conservation. https://doi.org/10.1016/j.pecon.2021.03.007\n\n\nR Package\n\n\nRodrigues, A.V; Nakamura, G; Duarte, L. (2021) naturaList: Classify Occurrences by Confidence Levels in the Species ID. CRAN - R package version 0.4.2 https://github.com/avrodrigues/naturaList\n\n\n\n2020\n\n\nArticle\n\n\nCosta, L.M.S; Goetze, M; Rodrigues, A.V; Seger, G.D. dos; Bered, F. (2020) Global rheophytes data set: angiosperms and gymnosperms. Ecology. https://doi.org/10.1002/ecy.3056\n\n\nLingner, D.V; Rodrigues, A.V; Oliveira, L.Z; Gasper A.L. de; Vibrans, A.C. (2020) Modelling changes in forest attributes driven by human activities at different spatial scales in the subtropical Atlantic Forest. Biodiversity and Conservation. https://doi.org/10.1007/s10531-020-01935-5\n\n\nKattge, J; Bönisch, G; Díaz, S; […]; Rodrigues, A.V; […]. (2020) TRY plant trait database–enhanced coverage and open access. Global Change Biology. https://doi.org/10.1111/gcb.14904\n\n\nPreprint\n\n\nRodrigues, A.V; Nakamura, G; Duarte, L. (2020) naturaList: a package to classify occurrence records in levels of confidence in species identification. bioRxiv. https://doi.org/10.1101/2020.05.26.115220\n\n\n\n2019\n\n\nArticle\n\n\nSevegnani, L; Gasper, A.L. de; Rodrigues, A.V; Lingner, D.V; Meyer, L; Uhlmann, A; Oliveira, L.Z; Vibrans, A.C. (2019) Structure and diversity of the Araucaria forest in southern Brazil: biotic homogenisation hinders the recognition of floristic assemblages related to altitude. Southern Forests: a Journal of Forest Science. https://doi.org/10.2989/20702620.2019.1636193\n\n\n\n2018\n\n\nArticle\n\n\nBruelheide, H; Dengler, J; […]; Rodrigues, A.V; […]; Ute Jandt. (2018) Global trait–environment relationships of plant communities. Nature Ecology & Evolution. https://doi.org/10.1038/s41559-018-0699-8\n\n\nRodrigues, A.V; Bones, F.L.V; Schneiders, A; Oliveira, L.Z; Vibrans, A.C; Gasper, A.L. de. (2018) Plant trait dataset for tree-like growth forms species of the subtropical Atlantic rain forest in Brazil. Data. https://doi.org/10.3390/data3020016\n\n\nVieira, C.K; Marascalchi, M.N; Rodrigues, A.V; Armas, R.D. de; Stürmer, S.L. (2018) Morphological and molecular diversity of arbuscular mycorrhizal fungi in revegetated iron-mining site has the same magnitude of adjacent pristine ecosystems. Journal of environmental sciences. https://doi.org/10.1016/j.jes.2017.08.019"
+  }
+]

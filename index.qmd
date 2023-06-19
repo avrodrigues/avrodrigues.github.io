@@ -1,0 +1,31 @@
+---
+title: "Arthur V. Rodrigues"
+description: "Community ecology · Macroecology · Biogeography"
+---
+
+::: {.column-screen}
+![](img/img2.jpg)
+:::
+
+::: {.column-margin}
+![](img/ID.jpg){width=150, height=150}
+:::
+
+## Hello!
+
+I’m Arthur Rodrigues, an Ecologist Researcher interested in understanding factors and processes that drive and maintain biodiversity patterns, from local to broad scales. Because of that, I have interests in the fields of community ecology, functional ecology, evolutionary macroecology, and biogeography.
+
+Some of my research interest includes:
+
+   - How evolutionary history and biogeography influence current biodiversity patterns;
+   - Ecological strategy of species (functional traits) and its relationship with community assembly;
+   - How anthropogenic factors, such as climate change and land-use, affects biodiversity patterns and community structure;
+   - Species distribution modeling;
+   - Predicting future scenarios for biodiversity.
+
+Beside that, I have great interest in programming using R language. I have used R for several ends, such as data analysis, creating web pages (like this one), web apps using {shiny}, maps and data visualization using {ggplot2}, as well as creating R packages, for example the {naturaList} package.
+
+Currently I am a Postoctoral Researcher at the [Reseach Centre for Ecological Change](https://www.helsinki.fi/en/researchgroups/research-centre-for-ecological-change), University of Helsiki. 
+
+Contact: rodrigues.arthur.v[at]gmail.com
+

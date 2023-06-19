@@ -1,0 +1,42 @@
+
+project:
+  type: website
+
+website:
+  title: "Arthur V. Rodrigues"
+  navbar: 
+    search: false
+    background: primary
+    right: 
+      - href: index.qmd
+        text: "Home"
+      - text: "Data Visualization"
+        menu:
+          - text: "Charts"
+            href: dataviz.qmd
+          - text: "Shiny apps"
+            href: shiny.qmd
+      - text: "R packages"
+        href: r_packages.qmd
+      - text: "Publications"
+        href: pub.qmd
+      - icon: github
+        href: https://www.github.io/avrodrigues
+      - icon: twitter
+        href: https://www.twitter.com/avrodrigues_
+        
+
+format:
+  html:
+    theme:
+      light: flatly
+    link-external-icon: false
+    link-external-newwindow: true
+    css: styles.css
+    toc: false
+    mainfont: 'Source Sans Pro'
+
+execute:
+  freeze: auto
+
+

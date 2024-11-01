@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://avrodrigues.github.io/blog.html</loc>
-    <lastmod>2024-01-18T11:30:31.061Z</lastmod>
-  </url>
-  <url>
-    <loc>https://avrodrigues.github.io/dataviz.html</loc>
-    <lastmod>2024-01-18T11:30:31.513Z</lastmod>
-  </url>
-  <url>
-    <loc>https://avrodrigues.github.io/index.html</loc>
-    <lastmod>2024-01-18T11:30:31.877Z</lastmod>
+    <loc>https://avrodrigues.github.io/shiny.html</loc>
+    <lastmod>2023-06-19T12:41:00.025Z</lastmod>
   </url>
   <url>
     <loc>https://avrodrigues.github.io/pub.html</loc>
-    <lastmod>2024-01-18T11:30:32.358Z</lastmod>
+    <lastmod>2023-06-19T12:41:00.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://avrodrigues.github.io/dataviz.html</loc>
+    <lastmod>2023-06-19T12:40:59.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://avrodrigues.github.io/blog.html</loc>
+    <lastmod>2023-06-19T12:40:59.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://avrodrigues.github.io/index.html</loc>
+    <lastmod>2023-06-19T12:40:59.994Z</lastmod>
   </url>
   <url>
     <loc>https://avrodrigues.github.io/r_packages.html</loc>
-    <lastmod>2024-01-18T11:30:32.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://avrodrigues.github.io/shiny.html</loc>
-    <lastmod>2024-01-18T11:30:33.006Z</lastmod>
+    <lastmod>2023-06-19T12:41:00.025Z</lastmod>
   </url>
 </urlset>

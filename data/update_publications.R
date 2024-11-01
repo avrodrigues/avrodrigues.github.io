@@ -15,24 +15,36 @@ tibble(
 ) %>% 
   add_row(
     status = "Published",
+    type_of_publication = "Preprint",
+    year = 2024,
+    title = "Unveiling ecological dynamics through simulation and visualization of biodiversity data cubes",
+    authors = "Langeraert, W; Barhdadi, W; Brosens, D; Cortès, R, Desmet, P, Di Musciano, M; Earl, C; Govaert, S; Huybrechts, P;  Martini, M; Rodrigues, A.V; Veeken, A; Yahaya, M.M; Van Daele, T.",
+    item_info = "BioHackrXiv.",
+    url_text = "https://doi.org/10.37044/osf.io/vcyr7"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>%
+  add_row(
+    status = "Published",
     type_of_publication = "Article",
     year = 2023,
     title = "Herodotools: An R package to integrate macroevolution, community ecology and biogeography",
     authors = "Nakamura, G; Rodrigues, A.V; Luza, A.L; Maestri, R; Debastiani, V; Duarte, L.",
-    item_info = "Journal of Biogeography",
+    item_info = "Journal of Biogeography.",
     url_text = "https://doi.org/10.1111/jbi.14610"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
   ) %>%
   add_row(
-    status = "In preparation",
+    status = "Published",
     type_of_publication = "Article",
-    year = 2022,
-    title = "Mapping species diversity and the evolutionary arenas of the genus Myrcia.",
+    year = 2023,
+    title = "Mapping species richness and evolutionary regions of the genus Myrcia.",
     authors = "Rodrigues. A.V; Duarte, L.",
-    # item_info = character(),
-    # url_text = character(),
+    item_info = "Journal of Biogeography. ",
+    url_text = "https://doi.org/10.1111/jbi.14791",
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
@@ -50,13 +62,13 @@ tibble(
     # url_youtube = character()
   ) %>% 
   add_row(
-    status = "In preparation",
+    status = "Published",
     type_of_publication = "Article",
-    year = 2022,
+    year = 2023,
     title = "Spatial distribution of the Greater Rhea (Rhea americana, Rheiformes, Rheidae) in Rio Grande do Sul, southern Brazil: citizen-science data, probabilistic mapping, and comparison with expert knowledge.",
     authors = "Luza, A.L; Rodrigues, A.V; Mammalis, L; Zulian, V.",
-    # item_info = character(),
-    # url_text = character(),
+    item_info = "Ornithology Research.",
+    url_text = "https://doi.org/10.1007/s43388-023-00143-3",
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()

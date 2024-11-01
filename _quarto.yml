@@ -21,7 +21,7 @@ website:
       - text: "Publications"
         href: pub.qmd
       - icon: github
-        href: https://www.github.io/avrodrigues
+        href: https://github.com/avrodrigues
       - icon: twitter
         href: https://www.twitter.com/avrodrigues_
         
